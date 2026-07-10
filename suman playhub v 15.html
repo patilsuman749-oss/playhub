@@ -1,0 +1,14555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Suman PlayHub 🎮
+</title>
+
+
+<style>
+
+/* =========================
+BASIC DESIGN
+========================= */
+
+* {
+
+margin: 0;
+
+padding: 0;
+
+box-sizing: border-box;
+
+font-family:
+
+Arial,
+
+sans-serif;
+
+}
+
+
+html {
+
+scroll-behavior:
+
+smooth;
+
+}
+
+
+body {
+
+background:
+
+#070a17;
+
+color:
+
+white;
+
+min-height:
+
+100vh;
+
+}
+
+
+/* =========================
+NAVIGATION
+========================= */
+
+nav {
+
+height:
+
+75px;
+
+padding:
+
+0 6%;
+
+display:
+
+flex;
+
+align-items:
+
+center;
+
+justify-content:
+
+space-between;
+
+position:
+
+sticky;
+
+top:
+
+0;
+
+z-index:
+
+5000;
+
+background:
+
+rgba(
+
+8,
+
+13,
+
+35,
+
+0.97
+
+);
+
+border-bottom:
+
+2px solid
+
+#247cff;
+
+}
+
+
+.logo {
+
+font-size:
+
+26px;
+
+font-weight:
+
+bold;
+
+color:
+
+#3fa2ff;
+
+white-space:
+
+nowrap;
+
+}
+
+
+.logo span {
+
+color:
+
+#ad48ff;
+
+}
+
+
+.menu {
+
+display:
+
+flex;
+
+align-items:
+
+center;
+
+gap:
+
+23px;
+
+}
+
+
+.menu a {
+
+color:
+
+white;
+
+text-decoration:
+
+none;
+
+font-weight:
+
+bold;
+
+cursor:
+
+pointer;
+
+transition:
+
+0.25s;
+
+}
+
+
+.menu a:hover {
+
+color:
+
+#4ba5ff;
+
+}
+
+
+.menu-count {
+
+display:
+
+inline-flex;
+
+align-items:
+
+center;
+
+justify-content:
+
+center;
+
+min-width:
+
+21px;
+
+height:
+
+21px;
+
+padding:
+
+3px;
+
+margin-left:
+
+3px;
+
+border-radius:
+
+50%;
+
+background:
+
+#eb3d72;
+
+color:
+
+white;
+
+font-size:
+
+11px;
+
+}
+
+
+/* LOGIN */
+
+.login-menu {
+
+padding:
+
+10px 16px;
+
+border-radius:
+
+8px;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+#167cff,
+
+#813aff
+
+);
+
+}
+
+
+/* MOBILE MENU BUTTON */
+
+#mobileButton {
+
+display:
+
+none;
+
+width:
+
+44px;
+
+height:
+
+44px;
+
+border:
+
+none;
+
+border-radius:
+
+9px;
+
+background:
+
+linear-gradient(
+
+135deg,
+
+#167cff,
+
+#813aff
+
+);
+
+color:
+
+white;
+
+font-size:
+
+22px;
+
+cursor:
+
+pointer;
+
+}
+
+
+/* =========================
+HOME
+========================= */
+
+.hero {
+
+min-height:
+
+585px;
+
+padding:
+
+95px 8%;
+
+display:
+
+flex;
+
+align-items:
+
+center;
+
+background:
+
+radial-gradient(
+
+circle at right,
+
+rgba(
+
+111,
+
+39,
+
+255,
+
+0.7
+
+),
+
+transparent 42%
+
+),
+
+linear-gradient(
+
+135deg,
+
+#07122e,
+
+#10194d,
+
+#310b59
+
+);
+
+}
+
+
+.hero-content {
+
+max-width:
+
+750px;
+
+}
+
+
+.creator {
+
+display:
+
+inline-block;
+
+padding:
+
+9px 18px;
+
+margin-bottom:
+
+25px;
+
+border:
+
+1px solid
+
+#338dff;
+
+border-radius:
+
+25px;
+
+background:
+
+rgba(
+
+37,
+
+124,
+
+255,
+
+0.12
+
+);
+
+color:
+
+#67b6ff;
+
+}
+
+
+.hero h1 {
+
+font-size:
+
+60px;
+
+line-height:
+
+1.08;
+
+margin-bottom:
+
+22px;
+
+}
+
+
+.hero h1 span {
+
+color:
+
+#409eff;
+
+}
+
+
+.hero p {
+
+max-width:
+
+690px;
+
+color:
+
+#c6cce1;
+
+font-size:
+
+18px;
+
+line-height:
+
+1.7;
+
+margin-bottom:
+
+30px;
+
+}
+
+
+.main-button {
+
+display:
+
+inline-block;
+
+padding:
+
+15px 25px;
+
+margin:
+
+5px 8px 5px 0;
+
+border:
+
+none;
+
+border-radius:
+
+9px;
+
+text-decoration:
+
+none;
+
+font-weight:
+
+bold;
+
+cursor:
+
+pointer;
+
+}
+
+
+.explore-button {
+
+background:
+
+linear-gradient(
+
+90deg,
+
+#147cff,
+
+#7d39ff
+
+);
+
+color:
+
+white;
+
+}
+
+
+.sell-button {
+
+border:
+
+2px solid
+
+#3c96ff;
+
+background:
+
+transparent;
+
+color:
+
+white;
+
+}
+
+
+/* =========================
+COMMON SECTIONS
+========================= */
+
+.section {
+
+padding:
+
+75px 7%;
+
+}
+
+
+.section-heading {
+
+text-align:
+
+center;
+
+margin-bottom:
+
+35px;
+
+}
+
+
+.section-heading h2 {
+
+font-size:
+
+37px;
+
+margin-bottom:
+
+10px;
+
+}
+
+
+.section-heading p {
+
+color:
+
+#aeb5cc;
+
+}
+
+
+/* =========================
+SEARCH
+========================= */
+
+.search-area {
+
+max-width:
+
+900px;
+
+margin:
+
+0 auto 25px;
+
+display:
+
+flex;
+
+gap:
+
+10px;
+
+}
+
+
+.search-area input {
+
+flex:
+
+1;
+
+padding:
+
+16px;
+
+border:
+
+1px solid
+
+#303a61;
+
+border-radius:
+
+9px;
+
+background:
+
+#10162c;
+
+color:
+
+white;
+
+font-size:
+
+16px;
+
+outline:
+
+none;
+
+}
+
+
+.search-area button {
+
+padding:
+
+0 25px;
+
+border:
+
+none;
+
+border-radius:
+
+9px;
+
+background:
+
+#247cff;
+
+color:
+
+white;
+
+font-weight:
+
+bold;
+
+cursor:
+
+pointer;
+
+}
+
+
+/* FILTERS */
+
+.filters {
+
+display:
+
+flex;
+
+justify-content:
+
+center;
+
+flex-wrap:
+
+wrap;
+
+gap:
+
+9px;
+
+margin-bottom:
+
+35px;
+
+}
+
+
+.filters button {
+
+padding:
+
+11px 21px;
+
+border:
+
+1px solid
+
+#303a61;
+
+border-radius:
+
+25px;
+
+background:
+
+#151b35;
+
+color:
+
+white;
+
+cursor:
+
+pointer;
+
+}
+
+
+.filters button:hover,
+
+.filters button.active-filter {
+
+background:
+
+#247cff;
+
+}
+
+
+/* =========================
+GAME CARDS
+========================= */
+
+.game-grid {
+
+display:
+
+grid;
+
+grid-template-columns:
+
+repeat(
+
+auto-fit,
+
+minmax(
+
+240px,
+
+1fr
+
+)
+
+);
+
+gap:
+
+25px;
+
+}
+
+
+.game-card {
+
+overflow:
+
+hidden;
+
+border:
+
+1px solid
+
+#272e50;
+
+border-radius:
+
+16px;
+
+background:
+
+#12172d;
+
+transition:
+
+0.3s;
+
+}
+
+
+.game-card:hover {
+
+transform:
+
+translateY(
+
+-7px
+
+);
+
+box-shadow:
+
+0 12px 35px
+
+rgba(
+
+35,
+
+105,
+
+255,
+
+0.28
+
+);
+
+}
+
+
+.game-cover {
+
+height:
+
+245px;
+
+position:
+
+relative;
+
+display:
+
+flex;
+
+align-items:
+
+center;
+
+justify-content:
+
+center;
+
+overflow:
+
+hidden;
+
+background:
+
+linear-gradient(
+
+145deg,
+
+#126fd5,
+
+#6929ad
+
+);
+
+}
+
+
+.game-cover img {
+
+width:
+
+100%;
+
+height:
+
+100%;
+
+object-fit:
+
+cover;
+
+}
+
+
+.cover-icon {
+
+font-size:
+
+75px;
+
+}
+
+
+.console-badge {
+
+position:
+
+absolute;
+
+top:
+
+14px;
+
+left:
+
+14px;
+
+padding:
+
+7px 12px;
+
+border-radius:
+
+20px;
+
+background:
+
+rgba(
+
+0,
+
+0,
+
+0,
+
+0.72
+
+);
+
+font-size:
+
+12px;
+
+font-weight:
+
+bold;
+
+}
+
+
+.game-information {
+
+padding:
+
+20px;
+
+}
+
+
+.console-text {
+
+color:
+
+#5baaff;
+
+font-size:
+
+13px;
+
+}
+
+
+.game-information h3 {
+
+margin:
+
+9px 0;
+
+font-size:
+
+20px;
+
+}
+
+
+.condition {
+
+color:
+
+#64e5a3;
+
+font-size:
+
+14px;
+
+}
+
+
+.price {
+
+margin:
+
+14px 0;
+
+color:
+
+#ffd659;
+
+font-size:
+
+24px;
+
+font-weight:
+
+bold;
+
+}
+
+
+.seller-line {
+
+margin:
+
+7px 0;
+
+color:
+
+#aeb6cd;
+
+font-size:
+
+14px;
+
+}
+
+
+.location-line {
+
+color:
+
+#69b3ff;
+
+font-size:
+
+14px;
+
+}
+
+
+.card-buttons {
+
+display:
+
+grid;
+
+grid-template-columns:
+
+1fr 50px;
+
+gap:
+
+8px;
+
+margin-top:
+
+15px;
+
+}
+
+
+.card-buttons button {
+
+padding:
+
+12px;
+
+border:
+
+none;
+
+border-radius:
+
+8px;
+
+color:
+
+white;
+
+cursor:
+
+pointer;
+
+}
+
+
+.buy-game {
+
+background:
+
+#247cff;
+
+font-weight:
+
+bold;
+
+}
+
+
+.wishlist-game {
+
+background:
+
+#343a55;
+
+}
+
+
+.contact-game {
+
+width:
+
+100%;
+
+padding:
+
+11px;
+
+margin-top:
+
+9px;
+
+border:
+
+1px solid
+
+#3c91ff;
+
+border-radius:
+
+8px;
+
+background:
+
+rgba(
+
+36,
+
+124,
+
+255,
+
+0.1
+
+);
+
+color:
+
+#70b8ff;
+
+font-weight:
+
+bold;
+
+cursor:
+
+pointer;
+
+}
+
+
+.owner-buttons {
+
+display:
+
+grid;
+
+grid-template-columns:
+
+1fr 1fr;
+
+gap:
+
+8px;
+
+margin-top:
+
+9px;
+
+}
+
+
+.edit-game,
+
+.delete-game {
+
+padding:
+
+10px;
+
+border-radius:
+
+8px;
+
+cursor:
+
+pointer;
+
+}
+
+
+.edit-game {
+
+border:
+
+1px solid
+
+#e0ad3c;
+
+background:
+
+rgba(
+
+224,
+
+173,
+
+60,
+
+0.1
+
+);
+
+color:
+
+#ffd56d;
+
+}
+
+
+.delete-game {
+
+border:
+
+1px solid
+
+#e54b75;
+
+background:
+
+rgba(
+
+229,
+
+75,
+
+117,
+
+0.1
+
+);
+
+color:
+
+#ff7d9f;
+
+}
+
+
+/* =========================
+EMPTY LISTINGS
+========================= */
+
+.empty-listing {
+
+grid-column:
+
+1 / -1;
+
+padding:
+
+50px;
+
+text-align:
+
+center;
+
+border:
+
+2px dashed
+
+#35416d;
+
+border-radius:
+
+17px;
+
+color:
+
+#aeb5cc;
+
+line-height:
+
+1.7;
+
+}
+
+
+/* =========================
+POPUP
+========================= */
+
+.popup {
+
+position:
+
+fixed;
+
+top:
+
+0;
+
+left:
+
+0;
+
+width:
+
+100%;
+
+height:
+
+100%;
+
+display:
+
+none;
+
+align-items:
+
+center;
+
+justify-content:
+
+center;
+
+padding:
+
+20px;
+
+overflow-y:
+
+auto;
+
+background:
+
+rgba(
+
+0,
+
+0,
+
+0,
+
+0.88
+
+);
+
+z-index:
+
+9000;
+
+}
+
+
+.popup.show {
+
+display:
+
+flex;
+
+}
+
+
+.popup-box {
+
+width:
+
+100%;
+
+max-width:
+
+510px;
+
+max-height:
+
+90vh;
+
+overflow-y:
+
+auto;
+
+position:
+
+relative;
+
+padding:
+
+35px;
+
+border:
+
+1px solid
+
+#3788ff;
+
+border-radius:
+
+19px;
+
+background:
+
+linear-gradient(
+
+145deg,
+
+#11172f,
+
+#19143c
+
+);
+
+}
+
+
+.popup-box h2 {
+
+color:
+
+#61b0ff;
+
+margin-bottom:
+
+8px;
+
+}
+
+
+.popup-description {
+
+color:
+
+#aeb5cc;
+
+margin-bottom:
+
+20px;
+
+}
+
+
+.close-popup {
+
+position:
+
+absolute;
+
+top:
+
+14px;
+
+right:
+
+15px;
+
+width:
+
+36px;
+
+height:
+
+36px;
+
+border:
+
+none;
+
+border-radius:
+
+50%;
+
+background:
+
+#29304f;
+
+color:
+
+white;
+
+cursor:
+
+pointer;
+
+}
+
+
+/* FORM */
+
+.form-input,
+
+.form-select,
+
+.form-textarea {
+
+width:
+
+100%;
+
+padding:
+
+14px;
+
+margin:
+
+7px 0;
+
+border:
+
+1px solid
+
+#35406a;
+
+border-radius:
+
+9px;
+
+background:
+
+#080d20;
+
+color:
+
+white;
+
+font-size:
+
+15px;
+
+outline:
+
+none;
+
+}
+
+
+.form-textarea {
+
+height:
+
+100px;
+
+resize:
+
+vertical;
+
+}
+
+
+.form-button {
+
+width:
+
+100%;
+
+padding:
+
+15px;
+
+margin-top:
+
+14px;
+
+border:
+
+none;
+
+border-radius:
+
+9px;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+#147cff,
+
+#813aff
+
+);
+
+color:
+
+white;
+
+font-size:
+
+16px;
+
+font-weight:
+
+bold;
+
+cursor:
+
+pointer;
+
+}
+
+
+/* PHOTO */
+
+.photo-upload {
+
+padding:
+
+20px;
+
+margin:
+
+10px 0;
+
+text-align:
+
+center;
+
+border:
+
+2px dashed
+
+#3c83ff;
+
+border-radius:
+
+11px;
+
+cursor:
+
+pointer;
+
+}
+
+
+.photo-upload input {
+
+display:
+
+none;
+
+}
+
+
+#photoPreview {
+
+display:
+
+none;
+
+width:
+
+100%;
+
+max-height:
+
+220px;
+
+object-fit:
+
+contain;
+
+margin-top:
+
+12px;
+
+border-radius:
+
+9px;
+
+}
+
+
+.pin-note {
+
+padding:
+
+11px;
+
+margin:
+
+8px 0;
+
+border-radius:
+
+8px;
+
+background:
+
+rgba(
+
+36,
+
+124,
+
+255,
+
+0.1
+
+);
+
+color:
+
+#a9ceff;
+
+font-size:
+
+13px;
+
+line-height:
+
+1.5;
+
+}
+
+
+/* =========================
+CART
+========================= */
+
+.cart-item {
+
+display:
+
+flex;
+
+align-items:
+
+center;
+
+gap:
+
+13px;
+
+padding:
+
+14px;
+
+margin-bottom:
+
+10px;
+
+border:
+
+1px solid
+
+#2d3760;
+
+border-radius:
+
+11px;
+
+background:
+
+#090e22;
+
+}
+
+
+.cart-icon {
+
+width:
+
+50px;
+
+height:
+
+50px;
+
+display:
+
+flex;
+
+align-items:
+
+center;
+
+justify-content:
+
+center;
+
+border-radius:
+
+9px;
+
+background:
+
+linear-gradient(
+
+135deg,
+
+#147cff,
+
+#813aff
+
+);
+
+font-size:
+
+24px;
+
+}
+
+
+.cart-details {
+
+flex:
+
+1;
+
+}
+
+
+.cart-details p {
+
+color:
+
+#ffd659;
+
+margin-top:
+
+5px;
+
+}
+
+
+.remove-item {
+
+padding:
+
+8px;
+
+border:
+
+none;
+
+border-radius:
+
+7px;
+
+background:
+
+#3b1c35;
+
+color:
+
+#ff7c9f;
+
+cursor:
+
+pointer;
+
+}
+
+
+.cart-total {
+
+display:
+
+flex;
+
+justify-content:
+
+space-between;
+
+padding-top:
+
+18px;
+
+margin-top:
+
+18px;
+
+border-top:
+
+1px solid
+
+#35406a;
+
+font-size:
+
+22px;
+
+font-weight:
+
+bold;
+
+}
+
+
+.cart-total span:last-child {
+
+color:
+
+#ffd659;
+
+}
+
+
+/* =========================
+ABOUT AND SAFETY
+========================= */
+
+.about-section {
+
+background:
+
+#0c1024;
+
+}
+
+
+.info-grid {
+
+display:
+
+grid;
+
+grid-template-columns:
+
+repeat(
+
+auto-fit,
+
+minmax(
+
+240px,
+
+1fr
+
+)
+
+);
+
+gap:
+
+23px;
+
+}
+
+
+.info-card {
+
+padding:
+
+32px;
+
+text-align:
+
+center;
+
+border:
+
+1px solid
+
+#29335a;
+
+border-radius:
+
+16px;
+
+background:
+
+#12172d;
+
+}
+
+
+.info-icon {
+
+font-size:
+
+43px;
+
+margin-bottom:
+
+15px;
+
+}
+
+
+.info-card h3 {
+
+margin-bottom:
+
+11px;
+
+}
+
+
+.info-card p {
+
+color:
+
+#aeb5cc;
+
+line-height:
+
+1.7;
+
+}
+
+
+.safety-section {
+
+background:
+
+#10152c;
+
+}
+
+
+/* =========================
+FOOTER
+========================= */
+
+footer {
+
+padding:
+
+45px 20px;
+
+text-align:
+
+center;
+
+background:
+
+#050711;
+
+border-top:
+
+1px solid
+
+#252c4c;
+
+}
+
+
+footer h2 {
+
+color:
+
+#55aaff;
+
+}
+
+
+footer p {
+
+margin-top:
+
+10px;
+
+color:
+
+#aeb5cc;
+
+}
+
+
+/* =========================
+MESSAGE
+========================= */
+
+#message {
+
+display:
+
+none;
+
+position:
+
+fixed;
+
+left:
+
+50%;
+
+bottom:
+
+25px;
+
+transform:
+
+translateX(
+
+-50%
+
+);
+
+padding:
+
+14px 25px;
+
+border-radius:
+
+30px;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+#147cff,
+
+#813aff
+
+);
+
+color:
+
+white;
+
+font-weight:
+
+bold;
+
+z-index:
+
+12000;
+
+}
+
+
+/* =========================
+THEME BUTTON
+========================= */
+
+#themeButton {
+
+position:
+
+fixed;
+
+right:
+
+22px;
+
+bottom:
+
+80px;
+
+width:
+
+49px;
+
+height:
+
+49px;
+
+border:
+
+none;
+
+border-radius:
+
+50%;
+
+background:
+
+linear-gradient(
+
+135deg,
+
+#147cff,
+
+#813aff
+
+);
+
+color:
+
+white;
+
+font-size:
+
+21px;
+
+cursor:
+
+pointer;
+
+z-index:
+
+7000;
+
+}
+
+
+/* =========================
+LIGHT MODE
+========================= */
+
+body.light {
+
+background:
+
+#f3f6ff;
+
+color:
+
+#17203d;
+
+}
+
+
+body.light nav {
+
+background:
+
+rgba(
+
+255,
+
+255,
+
+255,
+
+0.98
+
+);
+
+}
+
+
+body.light .menu a {
+
+color:
+
+#17203d;
+
+}
+
+
+body.light .hero {
+
+background:
+
+linear-gradient(
+
+135deg,
+
+#edf5ff,
+
+#dddfff,
+
+#eee2ff
+
+);
+
+}
+
+
+body.light .hero p {
+
+color:
+
+#4f5a75;
+
+}
+
+
+body.light .section,
+
+body.light .about-section,
+
+body.light .safety-section {
+
+background:
+
+#f3f6ff;
+
+}
+
+
+body.light .game-card,
+
+body.light .info-card {
+
+background:
+
+white;
+
+border-color:
+
+#d3ddf0;
+
+}
+
+
+body.light .section-heading p,
+
+body.light .info-card p {
+
+color:
+
+#65708a;
+
+}
+
+
+body.light footer {
+
+background:
+
+#e5edff;
+
+}
+
+
+/* =========================
+MOBILE
+========================= */
+
+@media(
+
+max-width:
+
+800px
+
+) {
+
+
+nav {
+
+height:
+
+70px;
+
+padding:
+
+0 18px;
+
+}
+
+
+.logo {
+
+font-size:
+
+20px;
+
+}
+
+
+#mobileButton {
+
+display:
+
+block;
+
+}
+
+
+.menu {
+
+display:
+
+none;
+
+position:
+
+fixed;
+
+top:
+
+70px;
+
+left:
+
+10px;
+
+right:
+
+10px;
+
+max-height:
+
+calc(
+
+100vh - 85px
+
+);
+
+overflow-y:
+
+auto;
+
+padding:
+
+15px;
+
+border:
+
+1px solid
+
+#3889ff;
+
+border-radius:
+
+14px;
+
+background:
+
+rgba(
+
+8,
+
+13,
+
+35,
+
+0.99
+
+);
+
+flex-direction:
+
+column;
+
+align-items:
+
+stretch;
+
+gap:
+
+7px;
+
+}
+
+
+.menu.open {
+
+display:
+
+flex;
+
+}
+
+
+.menu a {
+
+padding:
+
+13px;
+
+border-radius:
+
+8px;
+
+background:
+
+#151c38;
+
+}
+
+
+.hero {
+
+min-height:
+
+560px;
+
+padding:
+
+75px 22px;
+
+}
+
+
+.hero h1 {
+
+font-size:
+
+42px;
+
+}
+
+
+.hero p {
+
+font-size:
+
+16px;
+
+}
+
+
+.section {
+
+padding:
+
+60px 20px;
+
+}
+
+
+.section-heading h2 {
+
+font-size:
+
+30px;
+
+}
+
+
+.search-area {
+
+flex-direction:
+
+column;
+
+}
+
+
+.search-area button {
+
+padding:
+
+14px;
+
+}
+
+
+.game-grid {
+
+grid-template-columns:
+
+1fr;
+
+}
+
+
+.popup {
+
+align-items:
+
+flex-start;
+
+padding:
+
+10px;
+
+}
+
+
+.popup-box {
+
+padding:
+
+30px 20px;
+
+max-height:
+
+calc(
+
+100vh - 20px
+
+);
+
+}
+
+
+body.light .menu {
+
+background:
+
+white;
+
+}
+
+
+body.light .menu a {
+
+background:
+
+#edf2ff;
+
+}
+
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<div class="logo">
+
+Suman <span>PlayHub</span> 🎮
+
+</div>
+
+
+<button
+id="mobileButton"
+onclick="toggleMobileMenu()">
+
+☰
+
+</button>
+
+
+<div
+class="menu"
+id="navigationMenu">
+
+
+<a href="#home">
+
+Home
+
+</a>
+
+
+<a href="#games">
+
+Buy Games
+
+</a>
+
+
+<a onclick="openSellPopup()">
+
+Sell Game
+
+</a>
+
+
+<a onclick="openWishlist()">
+
+❤️ Wishlist
+
+<span
+class="menu-count"
+id="wishlistCount">
+
+0
+
+</span>
+
+</a>
+
+
+<a onclick="openCart()">
+
+🛒 Cart
+
+<span
+class="menu-count"
+id="cartCount">
+
+0
+
+</span>
+
+</a>
+
+
+<a
+class="login-menu"
+onclick="openAccount()"
+id="loginMenu">
+
+👤 Login
+
+</a>
+
+
+<a href="#about">
+
+About
+
+</a>
+
+
+<a href="#safety">
+
+Safety
+
+</a>
+
+
+</div>
+
+</nav>
+
+
+<!-- HOME -->
+
+<section
+class="hero"
+id="home">
+
+
+<div class="hero-content">
+
+
+<div class="creator">
+
+🎮 Created by Suman
+
+</div>
+
+
+<h1>
+
+Buy. Sell.
+
+<span>
+
+Play Again.
+
+</span>
+
+</h1>
+
+
+<p>
+
+India's gaming marketplace for buying and
+selling second-hand PlayStation game CDs.
+
+Save money, discover games and give your
+old games a new player.
+
+</p>
+
+
+<a
+href="#games"
+class="main-button explore-button">
+
+🎮 Explore Games
+
+</a>
+
+
+<button
+class="main-button sell-button"
+onclick="openSellPopup()">
+
+💿 Sell Your Game
+
+</button>
+
+
+</div>
+
+</section>
+
+
+<!-- GAMES -->
+
+<section
+class="section"
+id="games">
+
+
+<div class="section-heading">
+
+<h2>
+
+🔥 Explore Games
+
+</h2>
+
+<p>
+
+Find affordable second-hand PS4 and PS5 games
+
+</p>
+
+</div>
+
+
+<div class="search-area">
+
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search GTA, Spider-Man, FIFA..."
+oninput="filterGames()">
+
+
+<button
+onclick="filterGames()">
+
+🔍 Search
+
+</button>
+
+
+</div>
+
+
+<div class="filters">
+
+
+<button
+class="active-filter"
+onclick="setFilter('ALL', this)">
+
+All Games
+
+</button>
+
+
+<button
+onclick="setFilter('PS4', this)">
+
+PS4
+
+</button>
+
+
+<button
+onclick="setFilter('PS5', this)">
+
+PS5
+
+</button>
+
+
+<button
+onclick="setFilter('UNDER1000', this)">
+
+Under ₹1,000
+
+</button>
+
+
+</div>
+
+
+<div
+class="game-grid"
+id="mainGames">
+
+</div>
+
+
+</section>
+
+
+<!-- USER LISTINGS -->
+
+<section
+class="section"
+id="userListings">
+
+
+<div class="section-heading">
+
+<h2>
+
+💿 Games Listed by Users
+
+</h2>
+
+<p>
+
+Recently listed games from other players
+
+</p>
+
+</div>
+
+
+<div
+class="game-grid"
+id="userGameGrid">
+
+</div>
+
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section
+class="section about-section"
+id="about">
+
+
+<div class="section-heading">
+
+<h2>
+
+🎮 About Suman PlayHub
+
+</h2>
+
+<p>
+
+Buy, sell and replay PlayStation games
+
+</p>
+
+</div>
+
+
+<div class="info-grid">
+
+
+<div class="info-card">
+
+<div class="info-icon">
+
+💿
+
+</div>
+
+<h3>
+
+Sell Old Games
+
+</h3>
+
+<p>
+
+Upload a photo and list the games
+you no longer play.
+
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<div class="info-icon">
+
+🛒
+
+</div>
+
+<h3>
+
+Buy for Less
+
+</h3>
+
+<p>
+
+Find affordable second-hand PS4
+and PS5 games.
+
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<div class="info-icon">
+
+♻️
+
+</div>
+
+<h3>
+
+Play Again
+
+</h3>
+
+<p>
+
+Give every game CD a chance
+to find a new player.
+
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- SAFETY -->
+
+<section
+class="section safety-section"
+id="safety">
+
+
+<div class="section-heading">
+
+<h2>
+
+🛡️ Stay Safe
+
+</h2>
+
+<p>
+
+Safety tips for buying and selling
+
+</p>
+
+</div>
+
+
+<div class="info-grid">
+
+
+<div class="info-card">
+
+<div class="info-icon">
+
+🛒
+
+</div>
+
+<h3>
+
+For Buyers
+
+</h3>
+
+<p>
+
+Check the CD condition before paying.
+Confirm whether the game is for PS4 or PS5.
+Meet in a safe public place with a trusted adult.
+
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<div class="info-icon">
+
+💿
+
+</div>
+
+<h3>
+
+For Sellers
+
+</h3>
+
+<p>
+
+Describe the condition correctly.
+Never share passwords or OTPs.
+Confirm payments carefully.
+
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+
+<h2>
+
+Suman PlayHub 🎮
+
+</h2>
+
+
+<p>
+
+Buy • Sell • Play Again
+
+</p>
+
+
+<p>
+
+Created with ❤️ by Suman
+
+</p>
+
+
+</footer>
+
+
+<!-- MESSAGE -->
+
+<div id="message">
+
+Message
+
+</div>
+
+
+<!-- THEME -->
+
+<button
+id="themeButton"
+onclick="changeTheme()">
+
+☀️
+
+</button>
+
+
+<!-- SELL POPUP -->
+
+<div
+class="popup"
+id="sellPopup">
+
+
+<div class="popup-box">
+
+
+<button
+class="close-popup"
+onclick="closePopup('sellPopup')">
+
+✕
+
+</button>
+
+
+<h2>
+
+💿 Sell Your Game
+
+</h2>
+
+
+<p class="popup-description">
+
+Add your PlayStation game details
+
+</p>
+
+
+<input
+class="form-input"
+id="sellerName"
+placeholder="Your name">
+
+
+<input
+class="form-input"
+id="sellGameName"
+placeholder="Game name">
+
+
+<select
+class="form-select"
+id="sellConsole">
+
+
+<option value="">
+
+Select console
+
+</option>
+
+
+<option>
+
+PS4
+
+</option>
+
+
+<option>
+
+PS5
+
+</option>
+
+
+</select>
+
+
+<input
+class="form-input"
+type="number"
+id="sellPrice"
+placeholder="Selling price ₹">
+
+
+<select
+class="form-select"
+id="sellCondition">
+
+
+<option value="">
+
+Select condition
+
+</option>
+
+
+<option>
+
+Like New
+
+</option>
+
+
+<option>
+
+Excellent
+
+</option>
+
+
+<option>
+
+Good Condition
+
+</option>
+
+
+<option>
+
+Used
+
+</option>
+
+
+</select>
+
+
+<input
+class="form-input"
+id="sellLocation"
+placeholder="Your city">
+
+
+<div
+class="photo-upload"
+onclick="openPhotoSelector(event)">
+
+
+<h3>
+
+📸 Upload Game Photo
+
+</h3>
+
+
+<p>
+
+Click here to select a clear photo
+
+</p>
+
+
+<input
+type="file"
+id="photoInput"
+accept="image/*"
+onchange="previewPhoto()">
+
+
+<img
+id="photoPreview"
+alt="Game preview">
+
+
+</div>
+
+
+<input
+class="form-input"
+type="password"
+maxlength="4"
+id="ownerPin"
+placeholder="Create a 4-digit owner PIN">
+
+
+<div class="pin-note">
+
+🔐 Use a separate PIN only for this website.
+You will need it to edit or remove your listing.
+Do not use your ATM or phone PIN.
+
+</div>
+
+
+<button
+class="form-button"
+onclick="listGame()">
+
+🎮 List My Game
+
+</button>
+
+
+</div>
+
+</div>
+
+
+<!-- CART POPUP -->
+
+<div
+class="popup"
+id="cartPopup">
+
+
+<div class="popup-box">
+
+
+<button
+class="close-popup"
+onclick="closePopup('cartPopup')">
+
+✕
+
+</button>
+
+
+<h2>
+
+🛒 My Cart
+
+</h2>
+
+
+<p class="popup-description">
+
+Your selected games
+
+</p>
+
+
+<div id="cartItems">
+
+</div>
+
+
+<div class="cart-total">
+
+
+<span>
+
+Total
+
+</span>
+
+
+<span id="cartTotal">
+
+₹0
+
+</span>
+
+
+</div>
+
+
+<button
+class="form-button"
+onclick="checkout()">
+
+🛡️ Proceed to Checkout
+
+</button>
+
+
+</div>
+
+</div>
+
+
+<!-- WISHLIST POPUP -->
+
+<div
+class="popup"
+id="wishlistPopup">
+
+
+<div class="popup-box">
+
+
+<button
+class="close-popup"
+onclick="closePopup('wishlistPopup')">
+
+✕
+
+</button>
+
+
+<h2>
+
+❤️ My Wishlist
+
+</h2>
+
+
+<p class="popup-description">
+
+Games saved for later
+
+</p>
+
+
+<div id="wishlistItems">
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<!-- LOGIN POPUP -->
+
+<div
+class="popup"
+id="loginPopup">
+
+
+<div class="popup-box">
+
+
+<button
+class="close-popup"
+onclick="closePopup('loginPopup')">
+
+✕
+
+</button>
+
+
+<h2>
+
+👤 Login / Sign Up
+
+</h2>
+
+
+<p class="popup-description">
+
+Enter your details to continue
+
+</p>
+
+
+<input
+class="form-input"
+id="loginName"
+placeholder="Your name">
+
+
+<input
+class="form-input"
+type="email"
+id="loginEmail"
+placeholder="Email address">
+
+
+<input
+class="form-input"
+type="password"
+id="loginPassword"
+placeholder="Password">
+
+
+<button
+class="form-button"
+onclick="loginUser()">
+
+🎮 Login / Sign Up
+
+</button>
+
+
+</div>
+
+</div>
+
+
+<!-- CHAT AND OFFER POPUP -->
+
+<div
+class="popup"
+id="contactPopup">
+
+
+<div class="popup-box">
+
+
+<button
+class="close-popup"
+onclick="closePopup('contactPopup')">
+
+✕
+
+</button>
+
+
+<h2 id="contactGameTitle">
+
+💬 Contact Seller
+
+</h2>
+
+
+<p
+class="popup-description"
+id="contactSellerInfo">
+
+Seller information
+
+</p>
+
+
+<input
+class="form-input"
+id="buyerName"
+placeholder="Your name">
+
+
+<textarea
+class="form-textarea"
+id="buyerMessage"
+placeholder="Hi, is this game still available?">
+
+</textarea>
+
+
+<button
+class="form-button"
+onclick="sendMessage()">
+
+💬 Send Message
+
+</button>
+
+
+<hr
+style="
+border:none;
+border-top:1px solid #35406a;
+margin:25px 0;
+">
+
+
+<h2>
+
+💰 Make an Offer
+
+</h2>
+
+
+<input
+class="form-input"
+type="number"
+id="offerPrice"
+placeholder="Your offer price ₹">
+
+
+<button
+class="form-button"
+onclick="sendOffer()">
+
+💰 Send Offer
+
+</button>
+
+
+</div>
+
+</div>
+
+
+<!-- PART A ENDS HERE -->
+<!-- =========================
+PART B — JAVASCRIPT
+========================= -->
+
+<script>
+
+/* =========================
+GAME DATA
+========================= */
+
+const defaultGames = [
+
+{
+name: "Grand Theft Auto V",
+console: "PS4",
+price: 899,
+condition: "Good Condition",
+seller: "PlayHub Seller",
+location: "Bengaluru",
+icon: "🚗"
+},
+
+{
+name: "Spider-Man 2",
+console: "PS5",
+price: 2799,
+condition: "Like New",
+seller: "Verified Seller",
+location: "Mysuru",
+icon: "🕷️"
+},
+
+{
+name: "God of War Ragnarök",
+console: "PS5",
+price: 2199,
+condition: "Excellent",
+seller: "Game World",
+location: "Ballari",
+icon: "⚔️"
+},
+
+{
+name: "EA Sports FC 25",
+console: "PS4",
+price: 1499,
+condition: "Good Condition",
+seller: "Football Gamer",
+location: "Bengaluru",
+icon: "⚽"
+},
+
+{
+name: "Red Dead Redemption 2",
+console: "PS4",
+price: 1299,
+condition: "Good Condition",
+seller: "Game Seller",
+location: "Hubballi",
+icon: "🤠"
+},
+
+{
+name: "Hogwarts Legacy",
+console: "PS5",
+price: 2099,
+condition: "Excellent",
+seller: "Wizard Gamer",
+location: "Mangaluru",
+icon: "🪄"
+},
+
+{
+name: "Uncharted 4",
+console: "PS4",
+price: 699,
+condition: "Used",
+seller: "Adventure Gamer",
+location: "Davanagere",
+icon: "🗺️"
+},
+
+{
+name: "Gran Turismo 7",
+console: "PS5",
+price: 1899,
+condition: "Good Condition",
+seller: "Racing Gamer",
+location: "Bengaluru",
+icon: "🏎️"
+}
+
+];
+
+
+/* =========================
+SAVED DATA
+========================= */
+
+let userGames =
+
+JSON.parse(
+
+localStorage.getItem(
+
+"sumanPlayHubUserGames"
+
+)
+
+)
+
+|| [];
+
+
+let cart =
+
+JSON.parse(
+
+localStorage.getItem(
+
+"sumanPlayHubCart"
+
+)
+
+)
+
+|| [];
+
+
+let wishlist =
+
+JSON.parse(
+
+localStorage.getItem(
+
+"sumanPlayHubWishlist"
+
+)
+
+)
+
+|| [];
+
+
+let currentFilter =
+
+"ALL";
+
+
+let selectedPhoto =
+
+"";
+
+
+let selectedContactGame =
+
+null;
+
+
+/* =========================
+SAVE DATA
+========================= */
+
+function saveData() {
+
+
+localStorage.setItem(
+
+"sumanPlayHubUserGames",
+
+JSON.stringify(
+
+userGames
+
+)
+
+);
+
+
+localStorage.setItem(
+
+"sumanPlayHubCart",
+
+JSON.stringify(
+
+cart
+
+)
+
+);
+
+
+localStorage.setItem(
+
+"sumanPlayHubWishlist",
+
+JSON.stringify(
+
+wishlist
+
+)
+
+);
+
+
+}
+
+
+/* =========================
+MESSAGE
+========================= */
+
+function showMessage(
+
+text
+
+) {
+
+
+let message =
+
+document.getElementById(
+
+"message"
+
+);
+
+
+message.innerText =
+
+text;
+
+
+message.style.display =
+
+"block";
+
+
+setTimeout(
+
+function() {
+
+
+message.style.display =
+
+"none";
+
+
+},
+
+2300
+
+);
+
+
+}
+
+
+/* =========================
+CREATE GAME CARD
+========================= */
+
+function createGameCard(
+
+game,
+
+isUserGame,
+
+index
+
+) {
+
+
+let image;
+
+
+if(
+
+game.photo
+
+) {
+
+
+image =
+
+`
+
+<img
+
+src="${game.photo}"
+
+alt="${game.name}">
+
+`;
+
+
+}
+
+else {
+
+
+image =
+
+`
+
+<div class="cover-icon">
+
+${game.icon || "💿"}
+
+</div>
+
+`;
+
+
+}
+
+
+let ownerButtons =
+
+"";
+
+
+if(
+
+isUserGame
+
+) {
+
+
+ownerButtons =
+
+`
+
+<div class="owner-buttons">
+
+
+<button
+
+class="edit-game"
+
+onclick="editListing(${index})">
+
+✏️ Edit
+
+</button>
+
+
+<button
+
+class="delete-game"
+
+onclick="deleteListing(${index})">
+
+🗑️ Remove
+
+</button>
+
+
+</div>
+
+`;
+
+
+}
+
+
+return `
+
+
+<div
+
+class="game-card"
+
+data-name="${game.name.toLowerCase()}"
+
+data-console="${game.console}"
+
+data-price="${game.price}">
+
+
+<div class="game-cover">
+
+
+${image}
+
+
+<span class="console-badge">
+
+${game.console}
+
+</span>
+
+
+</div>
+
+
+<div class="game-information">
+
+
+<span class="console-text">
+
+${game.console}
+
+</span>
+
+
+<h3>
+
+${game.name}
+
+</h3>
+
+
+<p class="condition">
+
+● ${game.condition}
+
+</p>
+
+
+<div class="price">
+
+₹${game.price.toLocaleString("en-IN")}
+
+</div>
+
+
+<p class="seller-line">
+
+👤 ${game.seller}
+
+</p>
+
+
+<p class="location-line">
+
+📍 ${game.location}
+
+</p>
+
+
+<div class="card-buttons">
+
+
+<button
+
+class="buy-game"
+
+onclick='addToCart(${JSON.stringify(game)})'>
+
+🛒 Buy
+
+</button>
+
+
+<button
+
+class="wishlist-game"
+
+onclick='toggleWishlist(${JSON.stringify(game)}, this)'>
+
+❤️
+
+</button>
+
+
+</div>
+
+
+<button
+
+class="contact-game"
+
+onclick='openContact(${JSON.stringify(game)})'>
+
+💬 Chat / Make Offer
+
+</button>
+
+
+${ownerButtons}
+
+
+</div>
+
+
+</div>
+
+`;
+
+
+}
+
+
+/* =========================
+DISPLAY DEFAULT GAMES
+========================= */
+
+function displayDefaultGames() {
+
+
+let container =
+
+document.getElementById(
+
+"mainGames"
+
+);
+
+
+container.innerHTML =
+
+"";
+
+
+defaultGames.forEach(
+
+function(
+
+game,
+
+index
+
+) {
+
+
+container.innerHTML +=
+
+createGameCard(
+
+game,
+
+false,
+
+index
+
+);
+
+
+}
+
+);
+
+
+}
+
+
+/* =========================
+DISPLAY USER GAMES
+========================= */
+
+function displayUserGames() {
+
+
+let container =
+
+document.getElementById(
+
+"userGameGrid"
+
+);
+
+
+container.innerHTML =
+
+"";
+
+
+if(
+
+userGames.length
+
+==
+
+0
+
+) {
+
+
+container.innerHTML =
+
+`
+
+<div class="empty-listing">
+
+🎮 No games have been listed yet.
+
+<br>
+
+Click <b>Sell Your Game</b>
+
+and be the first seller!
+
+</div>
+
+`;
+
+
+return;
+
+
+}
+
+
+userGames.forEach(
+
+function(
+
+game,
+
+index
+
+) {
+
+
+container.innerHTML +=
+
+createGameCard(
+
+game,
+
+true,
+
+index
+
+);
+
+
+}
+
+);
+
+
+}
+
+
+/* =========================
+SEARCH AND FILTER
+========================= */
+
+function setFilter(
+
+filter,
+
+button
+
+) {
+
+
+currentFilter =
+
+filter;
+
+
+document
+
+.querySelectorAll(
+
+".filters button"
+
+)
+
+.forEach(
+
+function(
+
+filterButton
+
+) {
+
+
+filterButton
+
+.classList
+
+.remove(
+
+"active-filter"
+
+);
+
+
+}
+
+);
+
+
+button.classList.add(
+
+"active-filter"
+
+);
+
+
+filterGames();
+
+
+}
+
+
+/* FILTER GAMES */
+
+function filterGames() {
+
+
+let search =
+
+document
+
+.getElementById(
+
+"searchInput"
+
+)
+
+.value
+
+.toLowerCase();
+
+
+let cards =
+
+document
+
+.querySelectorAll(
+
+"#mainGames .game-card"
+
+);
+
+
+cards.forEach(
+
+function(
+
+card
+
+) {
+
+
+let name =
+
+card.dataset.name;
+
+
+let consoleName =
+
+card.dataset.console;
+
+
+let price =
+
+Number(
+
+card.dataset.price
+
+);
+
+
+let searchMatch =
+
+name.includes(
+
+search
+
+);
+
+
+let filterMatch =
+
+false;
+
+
+if(
+
+currentFilter
+
+==
+
+"ALL"
+
+) {
+
+
+filterMatch =
+
+true;
+
+
+}
+
+
+if(
+
+currentFilter
+
+==
+
+consoleName
+
+) {
+
+
+filterMatch =
+
+true;
+
+
+}
+
+
+if(
+
+currentFilter
+
+==
+
+"UNDER1000"
+
+&&
+
+price < 1000
+
+) {
+
+
+filterMatch =
+
+true;
+
+
+}
+
+
+if(
+
+searchMatch
+
+&&
+
+filterMatch
+
+) {
+
+
+card.style.display =
+
+"block";
+
+
+}
+
+else {
+
+
+card.style.display =
+
+"none";
+
+
+}
+
+
+}
+
+);
+
+
+}
+
+
+/* =========================
+SELL POPUP
+========================= */
+
+function openSellPopup() {
+
+
+document
+
+.getElementById(
+
+"sellPopup"
+
+)
+
+.classList.add(
+
+"show"
+
+);
+
+
+closeMobileMenu();
+
+
+}
+
+
+/* =========================
+PHOTO
+========================= */
+
+function openPhotoSelector(
+
+event
+
+) {
+
+
+if(
+
+event.target.id
+
+!=
+
+"photoInput"
+
+) {
+
+
+document
+
+.getElementById(
+
+"photoInput"
+
+)
+
+.click();
+
+
+}
+
+
+}
+
+
+/* PREVIEW PHOTO */
+
+function previewPhoto() {
+
+
+let input =
+
+document.getElementById(
+
+"photoInput"
+
+);
+
+
+let photo =
+
+input.files[0];
+
+
+if(
+
+!photo
+
+) {
+
+
+return;
+
+
+}
+
+
+if(
+
+!photo.type.startsWith(
+
+"image/"
+
+)
+
+) {
+
+
+alert(
+
+"Please select an image 📸"
+
+);
+
+
+return;
+
+
+}
+
+
+if(
+
+photo.size
+
+>
+
+1500000
+
+) {
+
+
+alert(
+
+"Please select a photo smaller than 1.5 MB."
+
+);
+
+
+input.value =
+
+"";
+
+
+return;
+
+
+}
+
+
+let reader =
+
+new FileReader();
+
+
+reader.onload =
+
+function(
+
+event
+
+) {
+
+
+selectedPhoto =
+
+event.target.result;
+
+
+let preview =
+
+document.getElementById(
+
+"photoPreview"
+
+);
+
+
+preview.src =
+
+selectedPhoto;
+
+
+preview.style.display =
+
+"block";
+
+
+};
+
+
+reader.readAsDataURL(
+
+photo
+
+);
+
+
+}
+
+
+/* =========================
+LIST GAME
+========================= */
+
+function listGame() {
+
+
+let seller =
+
+document
+
+.getElementById(
+
+"sellerName"
+
+)
+
+.value
+
+.trim();
+
+
+let name =
+
+document
+
+.getElementById(
+
+"sellGameName"
+
+)
+
+.value
+
+.trim();
+
+
+let consoleName =
+
+document
+
+.getElementById(
+
+"sellConsole"
+
+)
+
+.value;
+
+
+let price =
+
+Number(
+
+document
+
+.getElementById(
+
+"sellPrice"
+
+)
+
+.value
+
+);
+
+
+let condition =
+
+document
+
+.getElementById(
+
+"sellCondition"
+
+)
+
+.value;
+
+
+let location =
+
+document
+
+.getElementById(
+
+"sellLocation"
+
+)
+
+.value
+
+.trim();
+
+
+let ownerPin =
+
+document
+
+.getElementById(
+
+"ownerPin"
+
+)
+
+.value
+
+.trim();
+
+
+if(
+
+seller == ""
+
+||
+
+name == ""
+
+||
+
+consoleName == ""
+
+||
+
+price <= 0
+
+||
+
+condition == ""
+
+||
+
+location == ""
+
+) {
+
+
+alert(
+
+"Please fill all the game details 🙂"
+
+);
+
+
+return;
+
+
+}
+
+
+if(
+
+ownerPin.length
+
+!=
+
+4
+
+||
+
+isNaN(
+
+ownerPin
+
+)
+
+) {
+
+
+alert(
+
+"Please create a 4-digit owner PIN 🔐"
+
+);
+
+
+return;
+
+
+}
+
+
+if(
+
+selectedPhoto
+
+==
+
+""
+
+) {
+
+
+alert(
+
+"Please upload a game photo 📸"
+
+);
+
+
+return;
+
+
+}
+
+
+let game = {
+
+
+name:
+
+name,
+
+
+console:
+
+consoleName,
+
+
+price:
+
+price,
+
+
+condition:
+
+condition,
+
+
+seller:
+
+seller,
+
+
+location:
+
+location,
+
+
+photo:
+
+selectedPhoto,
+
+
+ownerPin:
+
+ownerPin
+
+
+};
+
+
+userGames.unshift(
+
+game
+
+);
+
+
+try {
+
+
+saveData();
+
+
+}
+
+catch(
+
+error
+
+) {
+
+
+userGames.shift();
+
+
+alert(
+
+"The photo is too large to save. Please choose a smaller photo."
+
+);
+
+
+return;
+
+
+}
+
+
+displayUserGames();
+
+
+clearSellForm();
+
+
+closePopup(
+
+"sellPopup"
+
+);
+
+
+showMessage(
+
+"🎉 Game listed successfully!"
+
+);
+
+
+setTimeout(
+
+function() {
+
+
+document
+
+.getElementById(
+
+"userListings"
+
+)
+
+.scrollIntoView();
+
+
+},
+
+400
+
+);
+
+
+}
+
+
+/* CLEAR SELL FORM */
+
+function clearSellForm() {
+
+
+document
+
+.getElementById(
+
+"sellerName"
+
+)
+
+.value =
+
+"";
+
+
+document
+
+.getElementById(
+
+"sellGameName"
+
+)
+
+.value =
+
+"";
+
+
+document
+
+.getElementById(
+
+"sellConsole"
+
+)
+
+.value =
+
+"";
+
+
+document
+
+.getElementById(
+
+"sellPrice"
+
+)
+
+.value =
+
+"";
+
+
+document
+
+.getElementById(
+
+"sellCondition"
+
+)
+
+.value =
+
+"";
+
+
+document
+
+.getElementById(
+
+"sellLocation"
+
+)
+
+.value =
+
+"";
+
+
+document
+
+.getElementById(
+
+"ownerPin"
+
+)
+
+.value =
+
+"";
+
+
+document
+
+.getElementById(
+
+"photoInput"
+
+)
+
+.value =
+
+"";
+
+
+document
+
+.getElementById(
+
+"photoPreview"
+
+)
+
+.style.display =
+
+"none";
+
+
+selectedPhoto =
+
+"";
+
+
+}
+
+
+/* =========================
+DELETE LISTING
+========================= */
+
+function deleteListing(
+
+index
+
+) {
+
+
+let game =
+
+userGames[
+
+index
+
+];
+
+
+let enteredPin =
+
+prompt(
+
+"🔐 Enter your owner PIN to remove:\n\n"
+
++
+
+game.name
+
+);
+
+
+if(
+
+enteredPin
+
+==
+
+null
+
+) {
+
+
+return;
+
+
+}
+
+
+if(
+
+enteredPin
+
+!=
+
+game.ownerPin
+
+) {
+
+
+alert(
+
+"❌ Incorrect PIN. Only the owner can remove this listing."
+
+);
+
+
+return;
+
+
+}
+
+
+let confirmation =
+
+confirm(
+
+"Remove "
+
++
+
+game.name
+
++
+
+"?"
+
+);
+
+
+if(
+
+confirmation
+
+) {
+
+
+userGames.splice(
+
+index,
+
+1
+
+);
+
+
+saveData();
+
+
+displayUserGames();
+
+
+showMessage(
+
+"🗑️ Listing removed"
+
+);
+
+
+}
+
+
+}
+
+
+/* =========================
+EDIT LISTING
+========================= */
+
+function editListing(
+
+index
+
+) {
+
+
+let game =
+
+userGames[
+
+index
+
+];
+
+
+let enteredPin =
+
+prompt(
+
+"🔐 Enter your owner PIN to edit:\n\n"
+
++
+
+game.name
+
+);
+
+
+if(
+
+enteredPin
+
+!=
+
+game.ownerPin
+
+) {
+
+
+if(
+
+enteredPin
+
+!=
+
+null
+
+) {
+
+
+alert(
+
+"❌ Incorrect owner PIN"
+
+);
+
+
+}
+
+
+return;
+
+
+}
+
+
+let newPrice =
+
+prompt(
+
+"Enter the new selling price:",
+
+game.price
+
+);
+
+
+if(
+
+newPrice
+
+==
+
+null
+
+) {
+
+
+return;
+
+
+}
+
+
+newPrice =
+
+Number(
+
+newPrice
+
+);
+
+
+if(
+
+newPrice
+
+<=
+
+0
+
+) {
+
+
+alert(
+
+"Please enter a valid price"
+
+);
+
+
+return;
+
+
+}
+
+
+game.price =
+
+newPrice;
+
+
+saveData();
+
+
+displayUserGames();
+
+
+showMessage(
+
+"✏️ Listing updated"
+
+);
+
+
+}
+
+
+/* =========================
+CART
+========================= */
+
+function addToCart(
+
+game
+
+) {
+
+
+let exists =
+
+cart.some(
+
+function(
+
+item
+
+) {
+
+
+return item.name
+
+==
+
+game.name;
+
+
+}
+
+);
+
+
+if(
+
+exists
+
+) {
+
+
+showMessage(
+
+"🛒 Game is already in your cart"
+
+);
+
+
+return;
+
+
+}
+
+
+cart.push(
+
+{
+
+
+name:
+
+game.name,
+
+
+price:
+
+game.price
+
+
+}
+
+);
+
+
+saveData();
+
+
+updateCounts();
+
+
+showMessage(
+
+"🎮 Added to cart!"
+
+);
+
+
+}
+
+
+/* OPEN CART */
+
+function openCart() {
+
+
+updateCart();
+
+
+document
+
+.getElementById(
+
+"cartPopup"
+
+)
+
+.classList.add(
+
+"show"
+
+);
+
+
+closeMobileMenu();
+
+
+}
+
+
+/* UPDATE CART */
+
+function updateCart() {
+
+
+let area =
+
+document
+
+.getElementById(
+
+"cartItems"
+
+);
+
+
+let total =
+
+0;
+
+
+if(
+
+cart.length
+
+==
+
+0
+
+) {
+
+
+area.innerHTML =
+
+`
+
+<div class="empty-listing">
+
+Your cart is empty 🎮
+
+</div>
+
+`;
+
+
+}
+
+else {
+
+
+area.innerHTML =
+
+"";
+
+
+cart.forEach(
+
+function(
+
+game,
+
+index
+
+) {
+
+
+total +=
+
+game.price;
+
+
+area.innerHTML +=
+
+`
+
+<div class="cart-item">
+
+
+<div class="cart-icon">
+
+🎮
+
+</div>
+
+
+<div class="cart-details">
+
+
+<h3>
+
+${game.name}
+
+</h3>
+
+
+<p>
+
+₹${game.price.toLocaleString("en-IN")}
+
+</p>
+
+
+</div>
+
+
+<button
+
+class="remove-item"
+
+onclick="removeCartItem(${index})">
+
+🗑️
+
+</button>
+
+
+</div>
+
+`;
+
+
+}
+
+);
+
+
+}
+
+
+document
+
+.getElementById(
+
+"cartTotal"
+
+)
+
+.innerText =
+
+"₹"
+
++
+
+total.toLocaleString(
+
+"en-IN"
+
+);
+
+
+}
+
+
+/* REMOVE CART */
+
+function removeCartItem(
+
+index
+
+) {
+
+
+cart.splice(
+
+index,
+
+1
+
+);
+
+
+saveData();
+
+
+updateCounts();
+
+
+updateCart();
+
+
+}
+
+
+/* CHECKOUT */
+
+function checkout() {
+
+
+if(
+
+cart.length
+
+==
+
+0
+
+) {
+
+
+showMessage(
+
+"Your cart is empty 🎮"
+
+);
+
+
+return;
+
+
+}
+
+
+alert(
+
+"🎮 Checkout Demo\n\n"
+
++
+
+"Real payments are not connected yet.\n"
+
++
+
+"Do not enter real card, UPI or bank details."
+
+);
+
+
+}
+
+
+/* =========================
+WISHLIST
+========================= */
+
+function toggleWishlist(
+
+game,
+
+button
+
+) {
+
+
+let index =
+
+wishlist.findIndex(
+
+function(
+
+item
+
+) {
+
+
+return item.name
+
+==
+
+game.name;
+
+
+}
+
+);
+
+
+if(
+
+index
+
+==
+
+-1
+
+) {
+
+
+wishlist.push(
+
+{
+
+
+name:
+
+game.name,
+
+
+price:
+
+game.price
+
+
+}
+
+);
+
+
+button.innerHTML =
+
+"💖";
+
+
+button.style.background =
+
+"#cf2962";
+
+
+showMessage(
+
+"💖 Added to wishlist"
+
+);
+
+
+}
+
+else {
+
+
+wishlist.splice(
+
+index,
+
+1
+
+);
+
+
+button.innerHTML =
+
+"❤️";
+
+
+button.style.background =
+
+"#343a55";
+
+
+showMessage(
+
+"Removed from wishlist"
+
+);
+
+
+}
+
+
+saveData();
+
+
+updateCounts();
+
+
+}
+
+
+/* OPEN WISHLIST */
+
+function openWishlist() {
+
+
+updateWishlist();
+
+
+document
+
+.getElementById(
+
+"wishlistPopup"
+
+)
+
+.classList.add(
+
+"show"
+
+);
+
+
+closeMobileMenu();
+
+
+}
+
+
+/* UPDATE WISHLIST */
+
+function updateWishlist() {
+
+
+let area =
+
+document
+
+.getElementById(
+
+"wishlistItems"
+
+);
+
+
+if(
+
+wishlist.length
+
+==
+
+0
+
+) {
+
+
+area.innerHTML =
+
+`
+
+<div class="empty-listing">
+
+Your wishlist is empty ❤️
+
+</div>
+
+`;
+
+
+return;
+
+
+}
+
+
+area.innerHTML =
+
+"";
+
+
+wishlist.forEach(
+
+function(
+
+game,
+
+index
+
+) {
+
+
+area.innerHTML +=
+
+`
+
+<div class="cart-item">
+
+
+<div class="cart-icon">
+
+❤️
+
+</div>
+
+
+<div class="cart-details">
+
+
+<h3>
+
+${game.name}
+
+</h3>
+
+
+<p>
+
+₹${game.price.toLocaleString("en-IN")}
+
+</p>
+
+
+</div>
+
+
+<button
+
+class="remove-item"
+
+onclick="removeWishlistItem(${index})">
+
+🗑️
+
+</button>
+
+
+</div>
+
+`;
+
+
+}
+
+);
+
+
+}
+
+
+/* REMOVE WISHLIST */
+
+function removeWishlistItem(
+
+index
+
+) {
+
+
+wishlist.splice(
+
+index,
+
+1
+
+);
+
+
+saveData();
+
+
+updateCounts();
+
+
+updateWishlist();
+
+
+}
+
+
+/* =========================
+COUNTERS
+========================= */
+
+function updateCounts() {
+
+
+document
+
+.getElementById(
+
+"cartCount"
+
+)
+
+.innerText =
+
+cart.length;
+
+
+document
+
+.getElementById(
+
+"wishlistCount"
+
+)
+
+.innerText =
+
+wishlist.length;
+
+
+}
+
+
+/* =========================
+LOGIN DEMO
+========================= */
+
+function openLogin() {
+
+
+document
+
+.getElementById(
+
+"loginPopup"
+
+)
+
+.classList.add(
+
+"show"
+
+);
+
+
+closeMobileMenu();
+
+
+}
+
+
+/* LOGIN */
+
+function loginUser() {
+
+
+let name =
+
+document
+
+.getElementById(
+
+"loginName"
+
+)
+
+.value
+
+.trim();
+
+
+let email =
+
+document
+
+.getElementById(
+
+"loginEmail"
+
+)
+
+.value
+
+.trim();
+
+
+let password =
+
+document
+
+.getElementById(
+
+"loginPassword"
+
+)
+
+.value;
+
+
+if(
+
+name == ""
+
+||
+
+email == ""
+
+||
+
+password == ""
+
+) {
+
+
+alert(
+
+"Please fill all login details 🙂"
+
+);
+
+
+return;
+
+
+}
+
+
+localStorage.setItem(
+
+"sumanPlayHubUser",
+
+name
+
+);
+
+
+document
+
+.getElementById(
+
+"loginMenu"
+
+)
+
+.innerText =
+
+"👤 "
+
++
+
+name;
+
+
+closePopup(
+
+"loginPopup"
+
+);
+
+
+showMessage(
+
+"🎉 Welcome, "
+
++
+
+name
+
++
+
+"!"
+
+);
+
+
+}
+
+
+/* LOAD USER */
+
+function loadUser() {
+
+
+let user =
+
+localStorage.getItem(
+
+"sumanPlayHubUser"
+
+);
+
+
+if(
+
+user
+
+) {
+
+
+document
+
+.getElementById(
+
+"loginMenu"
+
+)
+
+.innerText =
+
+"👤 "
+
++
+
+user;
+
+
+}
+
+
+}
+
+
+/* =========================
+CHAT AND OFFER
+========================= */
+
+function openContact(
+
+game
+
+) {
+
+
+selectedContactGame =
+
+game;
+
+
+document
+
+.getElementById(
+
+"contactGameTitle"
+
+)
+
+.innerText =
+
+"💬 "
+
++
+
+game.name;
+
+
+document
+
+.getElementById(
+
+"contactSellerInfo"
+
+)
+
+.innerText =
+
+"Seller: "
+
++
+
+game.seller
+
++
+
+" • 📍 "
+
++
+
+game.location;
+
+
+document
+
+.getElementById(
+
+"contactPopup"
+
+)
+
+.classList.add(
+
+"show"
+
+);
+
+
+}
+
+
+/* SEND MESSAGE */
+
+function sendMessage() {
+
+
+let buyer =
+
+document
+
+.getElementById(
+
+"buyerName"
+
+)
+
+.value
+
+.trim();
+
+
+let message =
+
+document
+
+.getElementById(
+
+"buyerMessage"
+
+)
+
+.value
+
+.trim();
+
+
+if(
+
+buyer == ""
+
+||
+
+message == ""
+
+) {
+
+
+alert(
+
+"Please enter your name and message 🙂"
+
+);
+
+
+return;
+
+
+}
+
+
+showMessage(
+
+"💬 Message saved for seller!"
+
+);
+
+
+document
+
+.getElementById(
+
+"buyerMessage"
+
+)
+
+.value =
+
+"";
+
+
+}
+
+
+/* SEND OFFER */
+
+function sendOffer() {
+
+
+let buyer =
+
+document
+
+.getElementById(
+
+"buyerName"
+
+)
+
+.value
+
+.trim();
+
+
+let offer =
+
+Number(
+
+document
+
+.getElementById(
+
+"offerPrice"
+
+)
+
+.value
+
+);
+
+
+if(
+
+buyer == ""
+
+||
+
+offer <= 0
+
+) {
+
+
+alert(
+
+"Enter your name and offer price 🙂"
+
+);
+
+
+return;
+
+
+}
+
+
+if(
+
+offer >=
+
+selectedContactGame.price
+
+) {
+
+
+alert(
+
+"Your offer should be lower than the listed price."
+
+);
+
+
+return;
+
+
+}
+
+
+showMessage(
+
+"💰 Offer sent: ₹"
+
++
+
+offer.toLocaleString(
+
+"en-IN"
+
+)
+
+);
+
+
+document
+
+.getElementById(
+
+"offerPrice"
+
+)
+
+.value =
+
+"";
+
+
+}
+
+
+/* =========================
+POPUPS
+========================= */
+
+function closePopup(
+
+id
+
+) {
+
+
+document
+
+.getElementById(
+
+id
+
+)
+
+.classList.remove(
+
+"show"
+
+);
+
+
+}
+
+
+/* CLOSE BY CLICKING OUTSIDE */
+
+document
+
+.querySelectorAll(
+
+".popup"
+
+)
+
+.forEach(
+
+function(
+
+popup
+
+) {
+
+
+popup.addEventListener(
+
+"click",
+
+function(
+
+event
+
+) {
+
+
+if(
+
+event.target
+
+==
+
+popup
+
+) {
+
+
+popup.classList.remove(
+
+"show"
+
+);
+
+
+}
+
+
+}
+
+);
+
+
+}
+
+);
+
+
+/* =========================
+MOBILE MENU
+========================= */
+
+function toggleMobileMenu() {
+
+
+let menu =
+
+document
+
+.getElementById(
+
+"navigationMenu"
+
+);
+
+
+menu.classList.toggle(
+
+"open"
+
+);
+
+
+document
+
+.getElementById(
+
+"mobileButton"
+
+)
+
+.innerText =
+
+menu.classList.contains(
+
+"open"
+
+)
+
+?
+
+"✕"
+
+:
+
+"☰";
+
+
+}
+
+
+/* CLOSE MOBILE */
+
+function closeMobileMenu() {
+
+
+document
+
+.getElementById(
+
+"navigationMenu"
+
+)
+
+.classList.remove(
+
+"open"
+
+);
+
+
+document
+
+.getElementById(
+
+"mobileButton"
+
+)
+
+.innerText =
+
+"☰";
+
+
+}
+
+
+/* CLOSE AFTER LINK */
+
+document
+
+.querySelectorAll(
+
+"#navigationMenu a"
+
+)
+
+.forEach(
+
+function(
+
+link
+
+) {
+
+
+link.addEventListener(
+
+"click",
+
+function() {
+
+
+if(
+
+window.innerWidth
+
+<=
+
+800
+
+) {
+
+
+setTimeout(
+
+closeMobileMenu,
+
+150
+
+);
+
+
+}
+
+
+}
+
+);
+
+
+}
+
+);
+
+
+/* =========================
+THEME
+========================= */
+
+function changeTheme() {
+
+
+document.body
+
+.classList.toggle(
+
+"light"
+
+);
+
+
+let lightMode =
+
+document.body
+
+.classList.contains(
+
+"light"
+
+);
+
+
+document
+
+.getElementById(
+
+"themeButton"
+
+)
+
+.innerText =
+
+lightMode
+
+?
+
+"🌙"
+
+:
+
+"☀️";
+
+
+localStorage.setItem(
+
+"sumanPlayHubTheme",
+
+lightMode
+
+?
+
+"light"
+
+:
+
+"dark"
+
+);
+
+
+}
+
+
+/* LOAD THEME */
+
+function loadTheme() {
+
+
+let theme =
+
+localStorage.getItem(
+
+"sumanPlayHubTheme"
+
+);
+
+
+if(
+
+theme
+
+==
+
+"light"
+
+) {
+
+
+document.body
+
+.classList.add(
+
+"light"
+
+);
+
+
+document
+
+.getElementById(
+
+"themeButton"
+
+)
+
+.innerText =
+
+"🌙";
+
+
+}
+
+
+}
+
+
+/* =========================
+START WEBSITE
+========================= */
+
+displayDefaultGames();
+
+
+displayUserGames();
+
+
+updateCounts();
+
+
+loadUser();
+
+
+loadTheme();
+
+
+</script>
+<!-- =========================
+PART C
+DELIVERY + DETAILS + SOLD
+========================= -->
+
+
+<!-- GAME DETAILS POPUP -->
+
+<div
+class="popup"
+id="detailsPopup">
+
+
+<div class="popup-box details-box">
+
+
+<button
+class="close-popup"
+onclick="closePopup('detailsPopup')">
+
+✕
+
+</button>
+
+
+<div
+class="details-photo"
+id="detailsPhoto">
+
+🎮
+
+</div>
+
+
+<div class="details-content">
+
+
+<div
+class="details-status"
+id="detailsStatus">
+
+🟢 Available
+
+</div>
+
+
+<h2
+id="detailsGameName">
+
+Game Name
+
+</h2>
+
+
+<h1
+id="detailsPrice">
+
+₹0
+
+</h1>
+
+
+<div class="details-information">
+
+
+<p>
+
+🎮 Console:
+
+<strong id="detailsConsole">
+
+PS5
+
+</strong>
+
+</p>
+
+
+<p>
+
+💿 Condition:
+
+<strong id="detailsCondition">
+
+Good
+
+</strong>
+
+</p>
+
+
+<p>
+
+👤 Seller:
+
+<strong id="detailsSeller">
+
+Seller
+
+</strong>
+
+</p>
+
+
+<p>
+
+📍 Location:
+
+<strong id="detailsLocation">
+
+City
+
+</strong>
+
+</p>
+
+
+<p>
+
+📦 Delivery:
+
+<strong id="detailsDelivery">
+
+Not provided
+
+</strong>
+
+</p>
+
+
+</div>
+
+
+<button
+class="form-button"
+id="detailsBuyButton"
+onclick="buySelectedDetailGame()">
+
+🛒 Add to Cart
+
+</button>
+
+
+<button
+class="details-contact-button"
+onclick="contactSelectedDetailGame()">
+
+💬 Chat / Make an Offer
+
+</button>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<style>
+
+
+/* DELIVERY LABEL */
+
+.delivery-title {
+
+display:
+block;
+
+margin:
+
+13px 0 5px;
+
+color:
+
+#c7cde0;
+
+font-size:
+
+14px;
+
+}
+
+
+/* DETAILS BUTTON */
+
+.details-button {
+
+width:
+
+100%;
+
+padding:
+
+11px;
+
+margin-top:
+
+9px;
+
+border:
+
+1px solid #a65cff;
+
+border-radius:
+
+8px;
+
+background:
+
+rgba(
+
+132,
+
+60,
+
+255,
+
+0.11
+
+);
+
+color:
+
+#c494ff;
+
+font-weight:
+
+bold;
+
+cursor:
+
+pointer;
+
+}
+
+
+.details-button:hover {
+
+background:
+
+linear-gradient(
+
+90deg,
+
+#147cff,
+
+#813aff
+
+);
+
+color:
+
+white;
+
+}
+
+
+/* SOLD BUTTON */
+
+.sold-game-button {
+
+width:
+
+100%;
+
+padding:
+
+10px;
+
+margin-top:
+
+9px;
+
+border:
+
+1px solid #ed6c4d;
+
+border-radius:
+
+8px;
+
+background:
+
+rgba(
+
+237,
+
+80,
+
+60,
+
+0.1
+
+);
+
+color:
+
+#ff9277;
+
+font-weight:
+
+bold;
+
+cursor:
+
+pointer;
+
+}
+
+
+/* SOLD CARD */
+
+.game-card.game-sold {
+
+opacity:
+
+0.72;
+
+}
+
+
+.game-card.game-sold
+
+.game-cover::after {
+
+content:
+
+"SOLD";
+
+position:
+
+absolute;
+
+top:
+
+50%;
+
+left:
+
+50%;
+
+transform:
+
+translate(
+
+-50%,
+
+-50%
+
+)
+
+rotate(
+
+-10deg
+
+);
+
+padding:
+
+10px 30px;
+
+border:
+
+4px solid white;
+
+border-radius:
+
+8px;
+
+background:
+
+rgba(
+
+215,
+
+34,
+
+66,
+
+0.9
+
+);
+
+color:
+
+white;
+
+font-size:
+
+31px;
+
+font-weight:
+
+bold;
+
+letter-spacing:
+
+4px;
+
+z-index:
+
+10;
+
+}
+
+
+/* SOLD BUY BUTTON */
+
+.sold-buy-button {
+
+background:
+
+#555c70 !important;
+
+color:
+
+#c3c7d2 !important;
+
+cursor:
+
+not-allowed !important;
+
+}
+
+
+/* DETAILS BOX */
+
+.details-box {
+
+max-width:
+
+760px;
+
+display:
+
+grid;
+
+grid-template-columns:
+
+1fr 1fr;
+
+gap:
+
+25px;
+
+}
+
+
+.details-photo {
+
+min-height:
+
+390px;
+
+display:
+
+flex;
+
+align-items:
+
+center;
+
+justify-content:
+
+center;
+
+overflow:
+
+hidden;
+
+border-radius:
+
+15px;
+
+background:
+
+linear-gradient(
+
+145deg,
+
+#147cff,
+
+#7e39ff
+
+);
+
+font-size:
+
+90px;
+
+}
+
+
+.details-photo img {
+
+width:
+
+100%;
+
+height:
+
+100%;
+
+object-fit:
+
+cover;
+
+}
+
+
+.details-content {
+
+padding:
+
+15px 0;
+
+}
+
+
+.details-content h2 {
+
+margin:
+
+15px 0 7px;
+
+color:
+
+white;
+
+font-size:
+
+28px;
+
+}
+
+
+.details-content h1 {
+
+color:
+
+#ffd659;
+
+font-size:
+
+32px;
+
+}
+
+
+.details-status {
+
+display:
+
+inline-block;
+
+padding:
+
+7px 13px;
+
+border-radius:
+
+20px;
+
+background:
+
+rgba(
+
+44,
+
+201,
+
+124,
+
+0.13
+
+);
+
+color:
+
+#67e6a7;
+
+font-size:
+
+13px;
+
+font-weight:
+
+bold;
+
+}
+
+
+.details-status.sold-status {
+
+background:
+
+rgba(
+
+230,
+
+61,
+
+88,
+
+0.14
+
+);
+
+color:
+
+#ff7894;
+
+}
+
+
+.details-information {
+
+padding:
+
+16px;
+
+margin-top:
+
+18px;
+
+border:
+
+1px solid #303a62;
+
+border-radius:
+
+11px;
+
+background:
+
+#090e22;
+
+}
+
+
+.details-information p {
+
+margin:
+
+12px 0;
+
+color:
+
+#aeb6cd;
+
+}
+
+
+.details-information strong {
+
+float:
+
+right;
+
+max-width:
+
+55%;
+
+color:
+
+white;
+
+text-align:
+
+right;
+
+}
+
+
+.details-contact-button {
+
+width:
+
+100%;
+
+padding:
+
+13px;
+
+margin-top:
+
+9px;
+
+border:
+
+1px solid #3c91ff;
+
+border-radius:
+
+9px;
+
+background:
+
+rgba(
+
+36,
+
+124,
+
+255,
+
+0.1
+
+);
+
+color:
+
+#73baff;
+
+font-weight:
+
+bold;
+
+cursor:
+
+pointer;
+
+}
+
+
+/* LIGHT MODE */
+
+body.light
+
+.details-content h2 {
+
+color:
+
+#17203d;
+
+}
+
+
+body.light
+
+.details-information {
+
+background:
+
+white;
+
+border-color:
+
+#d2dcef;
+
+}
+
+
+body.light
+
+.details-information p {
+
+color:
+
+#63708a;
+
+}
+
+
+body.light
+
+.details-information strong {
+
+color:
+
+#17203d;
+
+}
+
+
+/* MOBILE */
+
+@media(
+
+max-width:
+
+700px
+
+) {
+
+
+.details-box {
+
+display:
+
+block;
+
+}
+
+
+.details-photo {
+
+min-height:
+
+280px;
+
+height:
+
+280px;
+
+margin-bottom:
+
+20px;
+
+}
+
+
+.details-content h2 {
+
+font-size:
+
+24px;
+
+}
+
+
+}
+
+
+</style>
+
+
+<script>
+
+
+/* =========================
+PART C VARIABLES
+========================= */
+
+
+let selectedDetailGame =
+
+null;
+
+
+/* =========================
+ADD DELIVERY OPTION
+TO SELL FORM
+========================= */
+
+
+let partCDeliverySelect =
+
+document.createElement(
+
+"select"
+
+);
+
+
+partCDeliverySelect.id =
+
+"sellDelivery";
+
+
+partCDeliverySelect.className =
+
+"form-select";
+
+
+partCDeliverySelect.innerHTML =
+
+`
+
+<option value="">
+
+Select delivery option
+
+</option>
+
+
+<option value="Local Pickup">
+
+📍 Local Pickup
+
+</option>
+
+
+<option value="Home Delivery">
+
+🚚 Home Delivery
+
+</option>
+
+
+<option value="Both Available">
+
+📦 Both Available
+
+</option>
+
+`;
+
+
+/* PUT DELIVERY BEFORE PHOTO */
+
+let partCPhotoArea =
+
+document.querySelector(
+
+".photo-upload"
+
+);
+
+
+partCPhotoArea
+
+.parentNode
+
+.insertBefore(
+
+partCDeliverySelect,
+
+partCPhotoArea
+
+);
+
+
+/* =========================
+REPLACE LIST GAME FUNCTION
+========================= */
+
+
+listGame =
+
+function() {
+
+
+let seller =
+
+document
+
+.getElementById(
+
+"sellerName"
+
+)
+
+.value
+
+.trim();
+
+
+let name =
+
+document
+
+.getElementById(
+
+"sellGameName"
+
+)
+
+.value
+
+.trim();
+
+
+let consoleName =
+
+document
+
+.getElementById(
+
+"sellConsole"
+
+)
+
+.value;
+
+
+let price =
+
+Number(
+
+document
+
+.getElementById(
+
+"sellPrice"
+
+)
+
+.value
+
+);
+
+
+let condition =
+
+document
+
+.getElementById(
+
+"sellCondition"
+
+)
+
+.value;
+
+
+let location =
+
+document
+
+.getElementById(
+
+"sellLocation"
+
+)
+
+.value
+
+.trim();
+
+
+let delivery =
+
+document
+
+.getElementById(
+
+"sellDelivery"
+
+)
+
+.value;
+
+
+let ownerPin =
+
+document
+
+.getElementById(
+
+"ownerPin"
+
+)
+
+.value
+
+.trim();
+
+
+if(
+
+seller == ""
+
+||
+
+name == ""
+
+||
+
+consoleName == ""
+
+||
+
+price <= 0
+
+||
+
+condition == ""
+
+||
+
+location == ""
+
+||
+
+delivery == ""
+
+) {
+
+
+alert(
+
+"Please fill all the game details 🙂"
+
+);
+
+
+return;
+
+
+}
+
+
+if(
+
+ownerPin.length
+
+!=
+
+4
+
+||
+
+isNaN(
+
+ownerPin
+
+)
+
+) {
+
+
+alert(
+
+"Please create a 4-digit owner PIN 🔐"
+
+);
+
+
+return;
+
+
+}
+
+
+if(
+
+selectedPhoto
+
+==
+
+""
+
+) {
+
+
+alert(
+
+"Please upload a game photo 📸"
+
+);
+
+
+return;
+
+
+}
+
+
+let game =
+
+{
+
+
+name:
+
+name,
+
+
+console:
+
+consoleName,
+
+
+price:
+
+price,
+
+
+condition:
+
+condition,
+
+
+seller:
+
+seller,
+
+
+location:
+
+location,
+
+
+delivery:
+
+delivery,
+
+
+photo:
+
+selectedPhoto,
+
+
+ownerPin:
+
+ownerPin,
+
+
+status:
+
+"Available"
+
+
+};
+
+
+userGames
+
+.unshift(
+
+game
+
+);
+
+
+try {
+
+
+saveData();
+
+
+}
+
+
+catch(
+
+error
+
+) {
+
+
+userGames
+
+.shift();
+
+
+alert(
+
+"The photo is too large to save. Please choose a smaller photo."
+
+);
+
+
+return;
+
+
+}
+
+
+displayUserGames();
+
+
+clearSellForm();
+
+
+document
+
+.getElementById(
+
+"sellDelivery"
+
+)
+
+.value =
+
+"";
+
+
+closePopup(
+
+"sellPopup"
+
+);
+
+
+showMessage(
+
+"🎉 Game listed successfully!"
+
+);
+
+
+setTimeout(
+
+function() {
+
+
+document
+
+.getElementById(
+
+"userListings"
+
+)
+
+.scrollIntoView(
+
+{
+
+behavior:
+
+"smooth"
+
+}
+
+);
+
+
+},
+
+400
+
+);
+
+
+};
+
+
+/* =========================
+ADD PART C BUTTONS
+========================= */
+
+
+function addPartCButtons() {
+
+
+let cards =
+
+document
+
+.querySelectorAll(
+
+"#userGameGrid .game-card"
+
+);
+
+
+cards.forEach(
+
+function(
+
+card,
+
+index
+
+) {
+
+
+let game =
+
+userGames[
+
+index
+
+];
+
+
+if(
+
+!game
+
+) {
+
+
+return;
+
+
+}
+
+
+/* OLD GAME SUPPORT */
+
+if(
+
+!game.delivery
+
+) {
+
+
+game.delivery =
+
+"Not provided";
+
+
+}
+
+
+if(
+
+!game.status
+
+) {
+
+
+game.status =
+
+"Available";
+
+
+}
+
+
+/* DETAILS BUTTON */
+
+if(
+
+!card
+
+.querySelector(
+
+".details-button"
+
+)
+
+) {
+
+
+let detailsButton =
+
+document
+
+.createElement(
+
+"button"
+
+);
+
+
+detailsButton.className =
+
+"details-button";
+
+
+detailsButton.innerHTML =
+
+"🔎 View Full Details";
+
+
+detailsButton.onclick =
+
+function() {
+
+
+openGameDetails(
+
+index
+
+);
+
+
+};
+
+
+card
+
+.querySelector(
+
+".game-information"
+
+)
+
+.appendChild(
+
+detailsButton
+
+);
+
+
+}
+
+
+/* MARK SOLD BUTTON */
+
+if(
+
+!card
+
+.querySelector(
+
+".sold-game-button"
+
+)
+
+) {
+
+
+let soldButton =
+
+document
+
+.createElement(
+
+"button"
+
+);
+
+
+soldButton.className =
+
+"sold-game-button";
+
+
+soldButton.innerHTML =
+
+game.status
+
+==
+
+"Sold"
+
+?
+
+"🔴 Game Sold"
+
+:
+
+"🟢 Mark as Sold";
+
+
+soldButton.onclick =
+
+function() {
+
+
+markGameAsSold(
+
+index
+
+);
+
+
+};
+
+
+card
+
+.querySelector(
+
+".game-information"
+
+)
+
+.appendChild(
+
+soldButton
+
+);
+
+
+}
+
+
+/* SOLD DESIGN */
+
+if(
+
+game.status
+
+==
+
+"Sold"
+
+) {
+
+
+card
+
+.classList
+
+.add(
+
+"game-sold"
+
+);
+
+
+let buyButton =
+
+card
+
+.querySelector(
+
+".buy-game"
+
+);
+
+
+if(
+
+buyButton
+
+) {
+
+
+buyButton.innerHTML =
+
+"🔴 Sold";
+
+
+buyButton.disabled =
+
+true;
+
+
+buyButton.classList
+
+.add(
+
+"sold-buy-button"
+
+);
+
+
+}
+
+
+}
+
+
+}
+
+);
+
+
+}
+
+
+/* =========================
+OPEN DETAILS
+========================= */
+
+
+function openGameDetails(
+
+index
+
+) {
+
+
+let game =
+
+userGames[
+
+index
+
+];
+
+
+selectedDetailGame =
+
+game;
+
+
+document
+
+.getElementById(
+
+"detailsGameName"
+
+)
+
+.innerText =
+
+game.name;
+
+
+document
+
+.getElementById(
+
+"detailsPrice"
+
+)
+
+.innerText =
+
+"₹"
+
++
+
+Number(
+
+game.price
+
+)
+
+.toLocaleString(
+
+"en-IN"
+
+);
+
+
+document
+
+.getElementById(
+
+"detailsConsole"
+
+)
+
+.innerText =
+
+game.console;
+
+
+document
+
+.getElementById(
+
+"detailsCondition"
+
+)
+
+.innerText =
+
+game.condition;
+
+
+document
+
+.getElementById(
+
+"detailsSeller"
+
+)
+
+.innerText =
+
+game.seller;
+
+
+document
+
+.getElementById(
+
+"detailsLocation"
+
+)
+
+.innerText =
+
+game.location;
+
+
+document
+
+.getElementById(
+
+"detailsDelivery"
+
+)
+
+.innerText =
+
+game.delivery
+
+||
+
+"Not provided";
+
+
+let photoArea =
+
+document
+
+.getElementById(
+
+"detailsPhoto"
+
+);
+
+
+if(
+
+game.photo
+
+) {
+
+
+photoArea.innerHTML =
+
+`
+
+<img
+
+src="${game.photo}"
+
+alt="${game.name}">
+
+`;
+
+
+}
+
+else {
+
+
+photoArea.innerHTML =
+
+"💿";
+
+
+}
+
+
+let status =
+
+document
+
+.getElementById(
+
+"detailsStatus"
+
+);
+
+
+let buyButton =
+
+document
+
+.getElementById(
+
+"detailsBuyButton"
+
+);
+
+
+if(
+
+game.status
+
+==
+
+"Sold"
+
+) {
+
+
+status.innerText =
+
+"🔴 Sold";
+
+
+status.classList
+
+.add(
+
+"sold-status"
+
+);
+
+
+buyButton.innerText =
+
+"🔴 This Game Is Sold";
+
+
+buyButton.disabled =
+
+true;
+
+
+buyButton.classList
+
+.add(
+
+"sold-buy-button"
+
+);
+
+
+}
+
+else {
+
+
+status.innerText =
+
+"🟢 Available";
+
+
+status.classList
+
+.remove(
+
+"sold-status"
+
+);
+
+
+buyButton.innerText =
+
+"🛒 Add to Cart";
+
+
+buyButton.disabled =
+
+false;
+
+
+buyButton.classList
+
+.remove(
+
+"sold-buy-button"
+
+);
+
+
+}
+
+
+document
+
+.getElementById(
+
+"detailsPopup"
+
+)
+
+.classList
+
+.add(
+
+"show"
+
+);
+
+
+}
+
+
+/* =========================
+DETAIL BUY
+========================= */
+
+
+function buySelectedDetailGame() {
+
+
+if(
+
+!selectedDetailGame
+
+) {
+
+
+return;
+
+
+}
+
+
+if(
+
+selectedDetailGame.status
+
+==
+
+"Sold"
+
+) {
+
+
+showMessage(
+
+"🔴 This game is already sold"
+
+);
+
+
+return;
+
+
+}
+
+
+addToCart(
+
+selectedDetailGame
+
+);
+
+
+}
+
+
+/* =========================
+DETAIL CONTACT
+========================= */
+
+
+function contactSelectedDetailGame() {
+
+
+if(
+
+!selectedDetailGame
+
+) {
+
+
+return;
+
+
+}
+
+
+closePopup(
+
+"detailsPopup"
+
+);
+
+
+openContact(
+
+selectedDetailGame
+
+);
+
+
+}
+
+
+/* =========================
+MARK GAME SOLD
+========================= */
+
+
+function markGameAsSold(
+
+index
+
+) {
+
+
+let game =
+
+userGames[
+
+index
+
+];
+
+
+if(
+
+game.status
+
+==
+
+"Sold"
+
+) {
+
+
+showMessage(
+
+"🔴 This game is already marked as sold"
+
+);
+
+
+return;
+
+
+}
+
+
+let enteredPin =
+
+prompt(
+
+"🔐 Enter the owner PIN to mark this game as sold:\n\n"
+
++
+
+game.name
+
+);
+
+
+if(
+
+enteredPin
+
+==
+
+null
+
+) {
+
+
+return;
+
+
+}
+
+
+if(
+
+enteredPin
+
+!=
+
+game.ownerPin
+
+) {
+
+
+alert(
+
+"❌ Incorrect owner PIN.\n\nOnly the owner can change the game status."
+
+);
+
+
+return;
+
+
+}
+
+
+let confirmation =
+
+confirm(
+
+"Mark "
+
++
+
+game.name
+
++
+
+" as SOLD?"
+
+);
+
+
+if(
+
+!confirmation
+
+) {
+
+
+return;
+
+
+}
+
+
+game.status =
+
+"Sold";
+
+
+saveData();
+
+
+displayUserGames();
+
+
+showMessage(
+
+"🔴 Game marked as sold"
+
+);
+
+
+}
+
+
+/* =========================
+UPDATE USER DISPLAY
+========================= */
+
+
+let originalDisplayUserGamesPartC =
+
+displayUserGames;
+
+
+displayUserGames =
+
+function() {
+
+
+originalDisplayUserGamesPartC();
+
+
+setTimeout(
+
+addPartCButtons,
+
+30
+
+);
+
+
+};
+
+
+/* SHOW BUTTONS NOW */
+
+displayUserGames();
+
+
+</script>
+
+
+<!-- =========================
+END PART C
+========================= -->
+<!-- =========================
+PART D
+SELLER INBOX
+========================= -->
+
+
+<!-- INBOX POPUP -->
+
+<div
+class="popup"
+id="inboxPopup">
+
+
+<div class="popup-box inbox-box">
+
+
+<button
+class="close-popup"
+onclick="closePopup('inboxPopup')">
+
+✕
+
+</button>
+
+
+<h2>
+
+🔔 Seller Inbox
+
+</h2>
+
+
+<p class="popup-description">
+
+Enter the owner PIN of your game to view its messages and offers.
+
+</p>
+
+
+<select
+class="form-select"
+id="inboxGameSelect">
+
+<option value="">
+
+Select your listed game
+
+</option>
+
+</select>
+
+
+<input
+class="form-input"
+type="password"
+id="inboxOwnerPin"
+maxlength="4"
+placeholder="Enter the game's 4-digit owner PIN">
+
+
+<button
+class="form-button"
+onclick="openSellerMessages()">
+
+🔓 Open My Inbox
+
+</button>
+
+
+<div
+id="sellerInboxArea">
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<style>
+
+
+/* =========================
+INBOX MENU BUTTON
+========================= */
+
+.inbox-menu-link {
+
+position:
+
+relative;
+
+}
+
+
+/* =========================
+INBOX AREA
+========================= */
+
+#sellerInboxArea {
+
+display:
+
+none;
+
+margin-top:
+
+25px;
+
+}
+
+
+.inbox-heading {
+
+display:
+
+flex;
+
+align-items:
+
+center;
+
+justify-content:
+
+space-between;
+
+margin-bottom:
+
+15px;
+
+}
+
+
+.inbox-heading h3 {
+
+color:
+
+#6bb6ff;
+
+}
+
+
+.inbox-total {
+
+padding:
+
+6px 11px;
+
+border-radius:
+
+20px;
+
+background:
+
+rgba(
+
+36,
+
+124,
+
+255,
+
+0.13
+
+);
+
+color:
+
+#77bdff;
+
+font-size:
+
+12px;
+
+}
+
+
+/* MESSAGE CARD */
+
+.inbox-message {
+
+padding:
+
+17px;
+
+margin-bottom:
+
+13px;
+
+border:
+
+1px solid #303b66;
+
+border-radius:
+
+12px;
+
+background:
+
+#090e22;
+
+}
+
+
+.inbox-message.unread {
+
+border-left:
+
+4px solid #378cff;
+
+}
+
+
+.inbox-message.offer-card {
+
+border-left:
+
+4px solid #e2b83d;
+
+}
+
+
+.inbox-top {
+
+display:
+
+flex;
+
+justify-content:
+
+space-between;
+
+gap:
+
+12px;
+
+margin-bottom:
+
+10px;
+
+}
+
+
+.inbox-buyer {
+
+color:
+
+#70b8ff;
+
+font-weight:
+
+bold;
+
+}
+
+
+.inbox-time {
+
+color:
+
+#747f9e;
+
+font-size:
+
+11px;
+
+text-align:
+
+right;
+
+}
+
+
+.inbox-game {
+
+display:
+
+inline-block;
+
+padding:
+
+5px 9px;
+
+margin-bottom:
+
+10px;
+
+border-radius:
+
+15px;
+
+background:
+
+rgba(
+
+132,
+
+60,
+
+255,
+
+0.14
+
+);
+
+color:
+
+#c096ff;
+
+font-size:
+
+12px;
+
+}
+
+
+.inbox-text {
+
+padding:
+
+12px;
+
+border-radius:
+
+8px;
+
+background:
+
+#11182e;
+
+color:
+
+#c7cde0;
+
+line-height:
+
+1.6;
+
+}
+
+
+/* OFFER PRICE */
+
+.inbox-offer-price {
+
+margin:
+
+12px 0;
+
+color:
+
+#ffd659;
+
+font-size:
+
+22px;
+
+font-weight:
+
+bold;
+
+}
+
+
+.inbox-listed-price {
+
+color:
+
+#aeb6cd;
+
+font-size:
+
+13px;
+
+}
+
+
+/* OFFER BUTTONS */
+
+.offer-action-buttons {
+
+display:
+
+grid;
+
+grid-template-columns:
+
+1fr 1fr;
+
+gap:
+
+9px;
+
+margin-top:
+
+13px;
+
+}
+
+
+.accept-offer {
+
+padding:
+
+11px;
+
+border:
+
+1px solid #39ce83;
+
+border-radius:
+
+8px;
+
+background:
+
+rgba(
+
+39,
+
+198,
+
+119,
+
+0.12
+
+);
+
+color:
+
+#69e9a7;
+
+font-weight:
+
+bold;
+
+cursor:
+
+pointer;
+
+}
+
+
+.reject-offer {
+
+padding:
+
+11px;
+
+border:
+
+1px solid #e75278;
+
+border-radius:
+
+8px;
+
+background:
+
+rgba(
+
+224,
+
+63,
+
+101,
+
+0.12
+
+);
+
+color:
+
+#ff7d9e;
+
+font-weight:
+
+bold;
+
+cursor:
+
+pointer;
+
+}
+
+
+.offer-result {
+
+display:
+
+inline-block;
+
+padding:
+
+7px 11px;
+
+margin-top:
+
+12px;
+
+border-radius:
+
+20px;
+
+font-size:
+
+12px;
+
+font-weight:
+
+bold;
+
+}
+
+
+.offer-accepted {
+
+background:
+
+rgba(
+
+39,
+
+198,
+
+119,
+
+0.14
+
+);
+
+color:
+
+#69e9a7;
+
+}
+
+
+.offer-rejected {
+
+background:
+
+rgba(
+
+224,
+
+63,
+
+101,
+
+0.14
+
+);
+
+color:
+
+#ff7d9e;
+
+}
+
+
+/* EMPTY INBOX */
+
+.empty-inbox {
+
+padding:
+
+35px 15px;
+
+text-align:
+
+center;
+
+border:
+
+2px dashed #35416d;
+
+border-radius:
+
+12px;
+
+color:
+
+#aeb6cd;
+
+line-height:
+
+1.7;
+
+}
+
+
+/* LIGHT MODE */
+
+body.light
+
+.inbox-message {
+
+background:
+
+white;
+
+border-color:
+
+#d3ddef;
+
+}
+
+
+body.light
+
+.inbox-text {
+
+background:
+
+#eef3ff;
+
+color:
+
+#46536f;
+
+}
+
+
+/* MOBILE */
+
+@media(
+
+max-width:
+
+700px
+
+) {
+
+
+.inbox-top {
+
+display:
+
+block;
+
+}
+
+
+.inbox-time {
+
+margin-top:
+
+6px;
+
+text-align:
+
+left;
+
+}
+
+
+}
+
+
+</style>
+
+
+<script>
+
+
+/* =========================
+PART D
+SELLER INBOX
+========================= */
+
+
+/* LOAD SAVED INBOX */
+
+let sellerInbox =
+
+JSON.parse(
+
+localStorage.getItem(
+
+"sumanPlayHubInbox"
+
+)
+
+)
+
+|| [];
+
+
+/* SAVE INBOX */
+
+function saveSellerInbox() {
+
+
+localStorage.setItem(
+
+"sumanPlayHubInbox",
+
+JSON.stringify(
+
+sellerInbox
+
+)
+
+);
+
+
+}
+
+
+/* =========================
+ADD INBOX TO NAVIGATION
+========================= */
+
+let inboxNavigationLink =
+
+document.createElement(
+
+"a"
+
+);
+
+
+inboxNavigationLink.className =
+
+"inbox-menu-link";
+
+
+inboxNavigationLink.innerHTML =
+
+`
+
+🔔 Inbox
+
+<span
+
+class="menu-count"
+
+id="inboxCount">
+
+0
+
+</span>
+
+`;
+
+
+inboxNavigationLink.onclick =
+
+function() {
+
+
+openInbox();
+
+
+};
+
+
+/* ADD BEFORE LOGIN */
+
+let loginNavigation =
+
+document.getElementById(
+
+"loginMenu"
+
+);
+
+
+loginNavigation
+
+.parentNode
+
+.insertBefore(
+
+inboxNavigationLink,
+
+loginNavigation
+
+);
+
+
+/* =========================
+UPDATE INBOX COUNT
+========================= */
+
+function updateInboxCount() {
+
+
+let unread =
+
+sellerInbox.filter(
+
+function(
+
+item
+
+) {
+
+
+return item.read
+
+!=
+
+true;
+
+
+}
+
+)
+
+.length;
+
+
+document
+
+.getElementById(
+
+"inboxCount"
+
+)
+
+.innerText =
+
+unread;
+
+
+}
+
+
+/* =========================
+OPEN INBOX
+========================= */
+
+function openInbox() {
+
+
+let select =
+
+document.getElementById(
+
+"inboxGameSelect"
+
+);
+
+
+select.innerHTML =
+
+`
+
+<option value="">
+
+Select your listed game
+
+</option>
+
+`;
+
+
+userGames.forEach(
+
+function(
+
+game,
+
+index
+
+) {
+
+
+select.innerHTML +=
+
+`
+
+<option value="${index}">
+
+${game.name} — ${game.seller}
+
+</option>
+
+`;
+
+
+}
+
+);
+
+
+document
+
+.getElementById(
+
+"inboxOwnerPin"
+
+)
+
+.value =
+
+"";
+
+
+document
+
+.getElementById(
+
+"sellerInboxArea"
+
+)
+
+.style.display =
+
+"none";
+
+
+document
+
+.getElementById(
+
+"inboxPopup"
+
+)
+
+.classList.add(
+
+"show"
+
+);
+
+
+closeMobileMenu();
+
+
+}
+
+
+/* =========================
+OPEN SELLER MESSAGES
+========================= */
+
+function openSellerMessages() {
+
+
+let gameIndex =
+
+document
+
+.getElementById(
+
+"inboxGameSelect"
+
+)
+
+.value;
+
+
+let enteredPin =
+
+document
+
+.getElementById(
+
+"inboxOwnerPin"
+
+)
+
+.value
+
+.trim();
+
+
+if(
+
+gameIndex
+
+==
+
+""
+
+) {
+
+
+alert(
+
+"Please select your game 🎮"
+
+);
+
+
+return;
+
+
+}
+
+
+let selectedGame =
+
+userGames[
+
+Number(
+
+gameIndex
+
+)
+
+];
+
+
+if(
+
+!selectedGame
+
+) {
+
+
+alert(
+
+"Game listing was not found."
+
+);
+
+
+return;
+
+
+}
+
+
+if(
+
+enteredPin
+
+!=
+
+selectedGame.ownerPin
+
+) {
+
+
+alert(
+
+"❌ Incorrect owner PIN.\n\nOnly the game owner can open this inbox."
+
+);
+
+
+return;
+
+
+}
+
+
+/* GET THIS GAME'S MESSAGES */
+
+let gameMessages =
+
+sellerInbox.filter(
+
+function(
+
+item
+
+) {
+
+
+return item.game
+
+==
+
+selectedGame.name
+
+&&
+
+item.seller
+
+==
+
+selectedGame.seller;
+
+
+}
+
+);
+
+
+/* MARK AS READ */
+
+sellerInbox.forEach(
+
+function(
+
+item
+
+) {
+
+
+if(
+
+item.game
+
+==
+
+selectedGame.name
+
+&&
+
+item.seller
+
+==
+
+selectedGame.seller
+
+) {
+
+
+item.read =
+
+true;
+
+
+}
+
+
+}
+
+);
+
+
+saveSellerInbox();
+
+
+updateInboxCount();
+
+
+displaySellerMessages(
+
+gameMessages,
+
+selectedGame
+
+);
+
+
+}
+
+
+/* =========================
+DISPLAY SELLER MESSAGES
+========================= */
+
+function displaySellerMessages(
+
+messages,
+
+game
+
+) {
+
+
+let area =
+
+document
+
+.getElementById(
+
+"sellerInboxArea"
+
+);
+
+
+area.style.display =
+
+"block";
+
+
+if(
+
+messages.length
+
+==
+
+0
+
+) {
+
+
+area.innerHTML =
+
+`
+
+<div class="empty-inbox">
+
+📭 No messages or offers for
+
+<b>${game.name}</b> yet.
+
+<br>
+
+New buyer messages will appear here.
+
+</div>
+
+`;
+
+
+return;
+
+
+}
+
+
+area.innerHTML =
+
+`
+
+<div class="inbox-heading">
+
+
+<h3>
+
+📨 ${game.name}
+
+</h3>
+
+
+<span class="inbox-total">
+
+${messages.length} received
+
+</span>
+
+
+</div>
+
+`;
+
+
+/* NEWEST FIRST */
+
+messages
+
+.slice()
+
+.reverse()
+
+.forEach(
+
+function(
+
+item
+
+) {
+
+
+let originalIndex =
+
+sellerInbox.indexOf(
+
+item
+
+);
+
+
+if(
+
+item.type
+
+==
+
+"offer"
+
+) {
+
+
+let offerStatus =
+
+"";
+
+
+if(
+
+item.status
+
+==
+
+"Accepted"
+
+) {
+
+
+offerStatus =
+
+`
+
+<span
+
+class="offer-result offer-accepted">
+
+✅ Offer Accepted
+
+</span>
+
+`;
+
+
+}
+
+
+else if(
+
+item.status
+
+==
+
+"Rejected"
+
+) {
+
+
+offerStatus =
+
+`
+
+<span
+
+class="offer-result offer-rejected">
+
+❌ Offer Rejected
+
+</span>
+
+`;
+
+
+}
+
+
+let actionButtons =
+
+"";
+
+
+if(
+
+!item.status
+
+||
+
+item.status
+
+==
+
+"Pending"
+
+) {
+
+
+actionButtons =
+
+`
+
+<div class="offer-action-buttons">
+
+
+<button
+
+class="accept-offer"
+
+onclick="changeOfferStatus(${originalIndex}, 'Accepted')">
+
+✅ Accept
+
+</button>
+
+
+<button
+
+class="reject-offer"
+
+onclick="changeOfferStatus(${originalIndex}, 'Rejected')">
+
+❌ Reject
+
+</button>
+
+
+</div>
+
+`;
+
+
+}
+
+
+area.innerHTML +=
+
+`
+
+<div class="inbox-message offer-card">
+
+
+<div class="inbox-top">
+
+
+<span class="inbox-buyer">
+
+👤 ${item.buyer}
+
+</span>
+
+
+<span class="inbox-time">
+
+${item.time}
+
+</span>
+
+
+</div>
+
+
+<span class="inbox-game">
+
+💰 Price Offer
+
+</span>
+
+
+<div class="inbox-offer-price">
+
+₹${Number(
+
+item.offer
+
+)
+
+.toLocaleString(
+
+"en-IN"
+
+)}
+
+</div>
+
+
+<div class="inbox-listed-price">
+
+Listed price:
+
+₹${Number(
+
+item.listedPrice
+
+)
+
+.toLocaleString(
+
+"en-IN"
+
+)}
+
+</div>
+
+
+${
+
+item.message
+
+?
+
+`
+
+<div
+
+class="inbox-text"
+
+style="margin-top:12px;">
+
+💬 ${item.message}
+
+</div>
+
+`
+
+:
+
+""
+
+}
+
+
+${actionButtons}
+
+
+${offerStatus}
+
+
+</div>
+
+`;
+
+
+}
+
+
+else {
+
+
+area.innerHTML +=
+
+`
+
+<div class="inbox-message">
+
+
+<div class="inbox-top">
+
+
+<span class="inbox-buyer">
+
+👤 ${item.buyer}
+
+</span>
+
+
+<span class="inbox-time">
+
+${item.time}
+
+</span>
+
+
+</div>
+
+
+<span class="inbox-game">
+
+💬 Buyer Message
+
+</span>
+
+
+<div class="inbox-text">
+
+${item.message}
+
+</div>
+
+
+</div>
+
+`;
+
+
+}
+
+
+}
+
+);
+
+
+}
+
+
+/* =========================
+ACCEPT OR REJECT OFFER
+========================= */
+
+function changeOfferStatus(
+
+index,
+
+status
+
+) {
+
+
+let item =
+
+sellerInbox[
+
+index
+
+];
+
+
+if(
+
+!item
+
+) {
+
+
+return;
+
+
+}
+
+
+item.status =
+
+status;
+
+
+saveSellerInbox();
+
+
+showMessage(
+
+status
+
+==
+
+"Accepted"
+
+?
+
+"✅ Offer accepted"
+
+:
+
+"❌ Offer rejected"
+
+);
+
+
+/* OPEN SAME GAME AGAIN */
+
+openSellerMessages();
+
+
+}
+
+
+/* =========================
+REPLACE SEND MESSAGE
+========================= */
+
+sendMessage =
+
+function() {
+
+
+let buyer =
+
+document
+
+.getElementById(
+
+"buyerName"
+
+)
+
+.value
+
+.trim();
+
+
+let message =
+
+document
+
+.getElementById(
+
+"buyerMessage"
+
+)
+
+.value
+
+.trim();
+
+
+if(
+
+buyer == ""
+
+||
+
+message == ""
+
+) {
+
+
+alert(
+
+"Please enter your name and message 🙂"
+
+);
+
+
+return;
+
+
+}
+
+
+if(
+
+!selectedContactGame
+
+) {
+
+
+alert(
+
+"Game information was not found."
+
+);
+
+
+return;
+
+
+}
+
+
+/* SAVE MESSAGE */
+
+sellerInbox.push(
+
+{
+
+
+type:
+
+"message",
+
+
+game:
+
+selectedContactGame.name,
+
+
+seller:
+
+selectedContactGame.seller,
+
+
+buyer:
+
+buyer,
+
+
+message:
+
+message,
+
+
+time:
+
+new Date()
+
+.toLocaleString(
+
+"en-IN"
+
+),
+
+
+read:
+
+false
+
+
+}
+
+);
+
+
+saveSellerInbox();
+
+
+updateInboxCount();
+
+
+document
+
+.getElementById(
+
+"buyerMessage"
+
+)
+
+.value =
+
+"";
+
+
+showMessage(
+
+"💬 Message added to seller inbox!"
+
+);
+
+
+};
+
+
+/* =========================
+REPLACE SEND OFFER
+========================= */
+
+sendOffer =
+
+function() {
+
+
+let buyer =
+
+document
+
+.getElementById(
+
+"buyerName"
+
+)
+
+.value
+
+.trim();
+
+
+let offer =
+
+Number(
+
+document
+
+.getElementById(
+
+"offerPrice"
+
+)
+
+.value
+
+);
+
+
+if(
+
+buyer == ""
+
+||
+
+offer <= 0
+
+) {
+
+
+alert(
+
+"Please enter your name and offer price 🙂"
+
+);
+
+
+return;
+
+
+}
+
+
+if(
+
+!selectedContactGame
+
+) {
+
+
+alert(
+
+"Game information was not found."
+
+);
+
+
+return;
+
+
+}
+
+
+if(
+
+offer
+
+>=
+
+selectedContactGame.price
+
+) {
+
+
+alert(
+
+"Your offer should be lower than the listed price.\n\nUse the Buy button for the full price 🎮"
+
+);
+
+
+return;
+
+
+}
+
+
+/* SAVE OFFER */
+
+sellerInbox.push(
+
+{
+
+
+type:
+
+"offer",
+
+
+game:
+
+selectedContactGame.name,
+
+
+seller:
+
+selectedContactGame.seller,
+
+
+buyer:
+
+buyer,
+
+
+offer:
+
+offer,
+
+
+listedPrice:
+
+selectedContactGame.price,
+
+
+message:
+
+document
+
+.getElementById(
+
+"buyerMessage"
+
+)
+
+.value
+
+.trim(),
+
+
+time:
+
+new Date()
+
+.toLocaleString(
+
+"en-IN"
+
+),
+
+
+status:
+
+"Pending",
+
+
+read:
+
+false
+
+
+}
+
+);
+
+
+saveSellerInbox();
+
+
+updateInboxCount();
+
+
+document
+
+.getElementById(
+
+"offerPrice"
+
+)
+
+.value =
+
+"";
+
+
+showMessage(
+
+"💰 Offer added to seller inbox!"
+
+);
+
+
+};
+
+
+/* START INBOX */
+
+updateInboxCount();
+
+
+</script>
+
+
+<!-- =========================
+END PART D<!-- =========================
+<!-- =========================
+PART E — ACCOUNT SYSTEM
+========================= -->
+
+
+<!-- NEW ACCOUNT POPUP -->
+
+<div class="popup" id="newAccountPopup">
+
+    <div class="popup-box account-popup-box">
+
+        <button
+        class="close-popup"
+        onclick="closePopup('newAccountPopup')">
+
+        ✕
+
+        </button>
+
+
+        <!-- LOGIN / CREATE ACCOUNT -->
+
+        <div id="accountGuestArea">
+
+            <h2>👤 Suman PlayHub Account</h2>
+
+            <p class="popup-description">
+
+                Login to your account or create a new one
+
+            </p>
+
+
+            <div class="account-tabs">
+
+                <button
+                id="accountLoginTab"
+                class="account-tab-active"
+                onclick="showNewLoginForm()">
+
+                    🔐 Login
+
+                </button>
+
+
+                <button
+                id="accountCreateTab"
+                onclick="showNewCreateForm()">
+
+                    🆕 Create Account
+
+                </button>
+
+            </div>
+
+
+            <!-- LOGIN FORM -->
+
+            <div id="newLoginForm">
+
+                <input
+                class="form-input"
+                id="newLoginUserId"
+                type="text"
+                placeholder="Enter your User ID"
+                autocomplete="username">
+
+
+                <input
+                class="form-input"
+                id="newLoginPassword"
+                type="password"
+                placeholder="Enter your password"
+                autocomplete="current-password">
+
+
+                <button
+                class="form-button"
+                onclick="newAccountLogin()">
+
+                    🔐 Login
+
+                </button>
+
+            </div>
+
+
+            <!-- CREATE ACCOUNT FORM -->
+
+            <div
+            id="newCreateForm"
+            style="display:none;">
+
+
+                <input
+                class="form-input"
+                id="newDisplayName"
+                type="text"
+                placeholder="Enter your name">
+
+
+                <input
+                class="form-input"
+                id="newUniqueUserId"
+                type="text"
+                placeholder="Create a unique User ID"
+                autocomplete="username">
+
+
+                <p class="account-small-text">
+
+                    Use at least 4 characters. You can use letters,
+                    numbers, underscore (_) and dot (.).
+
+                </p>
+
+
+                <input
+                class="form-input"
+                id="newCreatePassword"
+                type="password"
+                placeholder="Create a password"
+                autocomplete="new-password">
+
+
+                <input
+                class="form-input"
+                id="newConfirmPassword"
+                type="password"
+                placeholder="Confirm your password"
+                autocomplete="new-password">
+
+
+                <div class="account-password-warning">
+
+                    🔐 Use a new password only for this demo website.
+                    Do not use your Google, Instagram, email,
+                    school, banking, or other real password.
+
+                </div>
+
+
+                <button
+                class="form-button"
+                onclick="newCreateAccount()">
+
+                    🎮 Create My Account
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- LOGGED-IN PROFILE -->
+
+        <div
+        id="accountLoggedArea"
+        style="display:none;">
+
+
+            <div class="new-profile-avatar">
+
+                👤
+
+            </div>
+
+
+            <h2 id="newProfileName">
+
+                Player
+
+            </h2>
+
+
+            <p
+            class="new-profile-id"
+            id="newProfileId">
+
+                @player
+
+            </p>
+
+
+            <div class="new-profile-stats">
+
+
+                <div>
+
+                    <span>💿 My Listings</span>
+
+                    <strong id="newProfileListings">
+
+                        0
+
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>🛒 My Cart</span>
+
+                    <strong id="newProfileCart">
+
+                        0
+
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>❤️ Wishlist</span>
+
+                    <strong id="newProfileWishlist">
+
+                        0
+
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+            <button
+            class="new-profile-button"
+            onclick="newGoToMyListings()">
+
+                💿 View My Listings
+
+            </button>
+
+
+            <button
+            class="new-logout-button"
+            onclick="newLogoutAccount()">
+
+                🚪 Logout
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<style>
+
+
+/* =========================
+PART E ACCOUNT DESIGN
+========================= */
+
+
+.account-tabs {
+
+    display:
+
+    grid;
+
+    grid-template-columns:
+
+    1fr 1fr;
+
+    gap:
+
+    9px;
+
+    margin:
+
+    20px 0;
+
+}
+
+
+.account-tabs button {
+
+    padding:
+
+    13px;
+
+    border:
+
+    1px solid #34416d;
+
+    border-radius:
+
+    9px;
+
+    background:
+
+    #11172d;
+
+    color:
+
+    white;
+
+    font-weight:
+
+    bold;
+
+    cursor:
+
+    pointer;
+
+}
+
+
+.account-tabs button.account-tab-active {
+
+    border-color:
+
+    #3a91ff;
+
+    background:
+
+    linear-gradient(
+
+    90deg,
+
+    #147cff,
+
+    #813aff
+
+    );
+
+}
+
+
+.account-small-text {
+
+    margin:
+
+    -3px 3px 9px;
+
+    color:
+
+    #8e99b5;
+
+    font-size:
+
+    12px;
+
+    line-height:
+
+    1.5;
+
+}
+
+
+.account-password-warning {
+
+    padding:
+
+    12px;
+
+    margin:
+
+    10px 0;
+
+    border:
+
+    1px solid #d7a73a;
+
+    border-radius:
+
+    9px;
+
+    background:
+
+    rgba(
+
+    215,
+
+    167,
+
+    58,
+
+    0.1
+
+    );
+
+    color:
+
+    #ffd978;
+
+    font-size:
+
+    12px;
+
+    line-height:
+
+    1.6;
+
+}
+
+
+/* PROFILE */
+
+
+#accountLoggedArea {
+
+    text-align:
+
+    center;
+
+}
+
+
+.new-profile-avatar {
+
+    width:
+
+    88px;
+
+    height:
+
+    88px;
+
+    display:
+
+    flex;
+
+    align-items:
+
+    center;
+
+    justify-content:
+
+    center;
+
+    margin:
+
+    5px auto 17px;
+
+    border-radius:
+
+    50%;
+
+    background:
+
+    linear-gradient(
+
+    135deg,
+
+    #147cff,
+
+    #813aff
+
+    );
+
+    box-shadow:
+
+    0 8px 30px
+
+    rgba(
+
+    45,
+
+    101,
+
+    255,
+
+    0.4
+
+    );
+
+    font-size:
+
+    43px;
+
+}
+
+
+.new-profile-id {
+
+    margin-top:
+
+    7px;
+
+    color:
+
+    #69b5ff;
+
+}
+
+
+.new-profile-stats {
+
+    display:
+
+    grid;
+
+    grid-template-columns:
+
+    repeat(
+
+    3,
+
+    1fr
+
+    );
+
+    gap:
+
+    9px;
+
+    margin:
+
+    25px 0;
+
+}
+
+
+.new-profile-stats div {
+
+    padding:
+
+    15px 7px;
+
+    border:
+
+    1px solid #303a64;
+
+    border-radius:
+
+    11px;
+
+    background:
+
+    #090e22;
+
+}
+
+
+.new-profile-stats span {
+
+    display:
+
+    block;
+
+    color:
+
+    #aeb6cd;
+
+    font-size:
+
+    12px;
+
+}
+
+
+.new-profile-stats strong {
+
+    display:
+
+    block;
+
+    margin-top:
+
+    8px;
+
+    color:
+
+    #ffd659;
+
+    font-size:
+
+    23px;
+
+}
+
+
+.new-profile-button,
+
+.new-logout-button {
+
+    width:
+
+    100%;
+
+    padding:
+
+    14px;
+
+    margin-top:
+
+    9px;
+
+    border-radius:
+
+    9px;
+
+    font-size:
+
+    15px;
+
+    font-weight:
+
+    bold;
+
+    cursor:
+
+    pointer;
+
+}
+
+
+.new-profile-button {
+
+    border:
+
+    none;
+
+    background:
+
+    linear-gradient(
+
+    90deg,
+
+    #147cff,
+
+    #813aff
+
+    );
+
+    color:
+
+    white;
+
+}
+
+
+.new-logout-button {
+
+    border:
+
+    1px solid #e44f76;
+
+    background:
+
+    rgba(
+
+    225,
+
+    62,
+
+    101,
+
+    0.1
+
+    );
+
+    color:
+
+    #ff7e9e;
+
+}
+
+
+/* YOUR LISTING BADGE */
+
+
+.part-e-owner-badge {
+
+    display:
+
+    inline-block;
+
+    padding:
+
+    6px 10px;
+
+    margin:
+
+    8px 0;
+
+    border-radius:
+
+    20px;
+
+    background:
+
+    rgba(
+
+    44,
+
+    201,
+
+    124,
+
+    0.14
+
+    );
+
+    color:
+
+    #68e7a8;
+
+    font-size:
+
+    11px;
+
+    font-weight:
+
+    bold;
+
+}
+
+
+/* LIGHT MODE */
+
+
+body.light
+
+.account-tabs button {
+
+    background:
+
+    #edf2ff;
+
+    color:
+
+    #17203d;
+
+}
+
+
+body.light
+
+.new-profile-stats div {
+
+    border-color:
+
+    #d4dded;
+
+    background:
+
+    white;
+
+}
+
+
+/* MOBILE */
+
+
+@media(
+
+max-width:
+
+500px
+
+) {
+
+
+    .new-profile-stats {
+
+        grid-template-columns:
+
+        1fr;
+
+    }
+
+
+}
+
+
+</style>
+
+
+<script>
+
+
+/* =========================
+PART E ACCOUNT JAVASCRIPT
+========================= */
+
+
+/* LOAD SAVED ACCOUNTS */
+
+
+let partEAccounts =
+
+JSON.parse(
+
+localStorage.getItem(
+
+"sumanPlayHubRealAccounts"
+
+)
+
+)
+
+|| {};
+
+
+/* CURRENT LOGGED-IN USER */
+
+
+let partECurrentUser =
+
+localStorage.getItem(
+
+"sumanPlayHubLoggedAccount"
+
+)
+
+|| null;
+
+
+/* =========================
+SAVE ACCOUNT DATABASE
+========================= */
+
+
+function savePartEAccounts() {
+
+
+    localStorage.setItem(
+
+    "sumanPlayHubRealAccounts",
+
+    JSON.stringify(
+
+    partEAccounts
+
+    )
+
+    );
+
+
+}
+
+
+/* =========================
+CLEAN USER ID
+========================= */
+
+
+function partECleanUserId(
+
+userId
+
+) {
+
+
+    return userId
+
+    .trim()
+
+    .toLowerCase();
+
+
+}
+
+
+/* =========================
+OPEN ACCOUNT POPUP
+========================= */
+
+
+function openNewAccount() {
+
+
+    updatePartEAccountScreen();
+
+
+    document
+
+    .getElementById(
+
+    "newAccountPopup"
+
+    )
+
+    .classList
+
+    .add(
+
+    "show"
+
+    );
+
+
+    if(
+
+    typeof closeMobileMenu
+
+    ==
+
+    "function"
+
+    ) {
+
+
+        closeMobileMenu();
+
+
+    }
+
+
+}
+
+
+/* =========================
+CONNECT TOP LOGIN BUTTON
+========================= */
+
+
+let partELoginButton =
+
+document
+
+.getElementById(
+
+"loginMenu"
+
+);
+
+
+if(
+
+partELoginButton
+
+) {
+
+
+    partELoginButton
+
+    .removeAttribute(
+
+    "onclick"
+
+    );
+
+
+    partELoginButton
+
+    .onclick =
+
+    function(
+
+    event
+
+    ) {
+
+
+        event
+
+        .preventDefault();
+
+
+        event
+
+        .stopPropagation();
+
+
+        openNewAccount();
+
+
+        return false;
+
+
+    };
+
+
+}
+
+
+/* =========================
+LOGIN TAB
+========================= */
+
+
+function showNewLoginForm() {
+
+
+    document
+
+    .getElementById(
+
+    "newLoginForm"
+
+    )
+
+    .style
+
+    .display =
+
+    "block";
+
+
+    document
+
+    .getElementById(
+
+    "newCreateForm"
+
+    )
+
+    .style
+
+    .display =
+
+    "none";
+
+
+    document
+
+    .getElementById(
+
+    "accountLoginTab"
+
+    )
+
+    .classList
+
+    .add(
+
+    "account-tab-active"
+
+    );
+
+
+    document
+
+    .getElementById(
+
+    "accountCreateTab"
+
+    )
+
+    .classList
+
+    .remove(
+
+    "account-tab-active"
+
+    );
+
+
+}
+
+
+/* =========================
+CREATE TAB
+========================= */
+
+
+function showNewCreateForm() {
+
+
+    document
+
+    .getElementById(
+
+    "newLoginForm"
+
+    )
+
+    .style
+
+    .display =
+
+    "none";
+
+
+    document
+
+    .getElementById(
+
+    "newCreateForm"
+
+    )
+
+    .style
+
+    .display =
+
+    "block";
+
+
+    document
+
+    .getElementById(
+
+    "accountCreateTab"
+
+    )
+
+    .classList
+
+    .add(
+
+    "account-tab-active"
+
+    );
+
+
+    document
+
+    .getElementById(
+
+    "accountLoginTab"
+
+    )
+
+    .classList
+
+    .remove(
+
+    "account-tab-active"
+
+    );
+
+
+}
+
+
+/* =========================
+CREATE NEW ACCOUNT
+========================= */
+
+
+function newCreateAccount() {
+
+
+    let displayName =
+
+    document
+
+    .getElementById(
+
+    "newDisplayName"
+
+    )
+
+    .value
+
+    .trim();
+
+
+    let userId =
+
+    partECleanUserId(
+
+    document
+
+    .getElementById(
+
+    "newUniqueUserId"
+
+    )
+
+    .value
+
+    );
+
+
+    let password =
+
+    document
+
+    .getElementById(
+
+    "newCreatePassword"
+
+    )
+
+    .value;
+
+
+    let confirmPassword =
+
+    document
+
+    .getElementById(
+
+    "newConfirmPassword"
+
+    )
+
+    .value;
+
+
+/* EMPTY CHECK */
+
+
+    if(
+
+    displayName
+
+    ==
+
+    ""
+
+    ||
+
+    userId
+
+    ==
+
+    ""
+
+    ||
+
+    password
+
+    ==
+
+    ""
+
+    ||
+
+    confirmPassword
+
+    ==
+
+    ""
+
+    ) {
+
+
+        alert(
+
+        "Please fill all account details 🙂"
+
+        );
+
+
+        return;
+
+
+    }
+
+
+/* USER ID LENGTH */
+
+
+    if(
+
+    userId.length
+
+    <
+
+    4
+
+    ) {
+
+
+        alert(
+
+        "Your User ID must have at least 4 characters."
+
+        );
+
+
+        return;
+
+
+    }
+
+
+/* USER ID FORMAT */
+
+
+    if(
+
+    !/^[a-z0-9_.]+$/
+
+    .test(
+
+    userId
+
+    )
+
+    ) {
+
+
+        alert(
+
+        "User ID can contain only letters, numbers, underscore (_) and dot (.).\n\nSpaces are not allowed."
+
+        );
+
+
+        return;
+
+
+    }
+
+
+/* UNIQUE USER ID */
+
+
+    if(
+
+    partEAccounts[
+
+    userId
+
+    ]
+
+    ) {
+
+
+        alert(
+
+        "❌ This User ID is already taken.\n\nPlease choose another User ID."
+
+        );
+
+
+        return;
+
+
+    }
+
+
+/* PASSWORD LENGTH */
+
+
+    if(
+
+    password.length
+
+    <
+
+    6
+
+    ) {
+
+
+        alert(
+
+        "Create a password with at least 6 characters."
+
+        );
+
+
+        return;
+
+
+    }
+
+
+/* PASSWORD MATCH */
+
+
+    if(
+
+    password
+
+    !=
+
+    confirmPassword
+
+    ) {
+
+
+        alert(
+
+        "❌ The passwords do not match."
+
+        );
+
+
+        return;
+
+
+    }
+
+
+/* SAVE ACCOUNT */
+
+
+    partEAccounts[
+
+    userId
+
+    ]
+
+    =
+
+    {
+
+
+        displayName:
+
+        displayName,
+
+
+        userId:
+
+        userId,
+
+
+        password:
+
+        password,
+
+
+        created:
+
+        new Date()
+
+        .toLocaleString(
+
+        "en-IN"
+
+        )
+
+
+    };
+
+
+    savePartEAccounts();
+
+
+/* LOGIN NEW USER */
+
+
+    partECurrentUser =
+
+    userId;
+
+
+    localStorage
+
+    .setItem(
+
+    "sumanPlayHubLoggedAccount",
+
+    userId
+
+    );
+
+
+/* CREATE SEPARATE CART */
+
+
+    localStorage
+
+    .setItem(
+
+    "sumanPlayHubAccountCart_"
+
+    +
+
+    userId,
+
+    JSON.stringify(
+
+    []
+
+    )
+
+    );
+
+
+/* CREATE SEPARATE WISHLIST */
+
+
+    localStorage
+
+    .setItem(
+
+    "sumanPlayHubAccountWishlist_"
+
+    +
+
+    userId,
+
+    JSON.stringify(
+
+    []
+
+    )
+
+    );
+
+
+/* CLEAR FORM */
+
+
+    document
+
+    .getElementById(
+
+    "newDisplayName"
+
+    )
+
+    .value =
+
+    "";
+
+
+    document
+
+    .getElementById(
+
+    "newUniqueUserId"
+
+    )
+
+    .value =
+
+    "";
+
+
+    document
+
+    .getElementById(
+
+    "newCreatePassword"
+
+    )
+
+    .value =
+
+    "";
+
+
+    document
+
+    .getElementById(
+
+    "newConfirmPassword"
+
+    )
+
+    .value =
+
+    "";
+
+
+/* LOAD ACCOUNT */
+
+
+    loadPartEUserData();
+
+
+    updatePartEAccountScreen();
+
+
+    displayUserGames();
+
+
+    showMessage(
+
+    "🎉 Account created! Welcome, "
+
+    +
+
+    displayName
+
+    );
+
+
+}
+
+
+/* =========================
+LOGIN TO ACCOUNT
+========================= */
+
+
+function newAccountLogin() {
+
+
+    let userId =
+
+    partECleanUserId(
+
+    document
+
+    .getElementById(
+
+    "newLoginUserId"
+
+    )
+
+    .value
+
+    );
+
+
+    let password =
+
+    document
+
+    .getElementById(
+
+    "newLoginPassword"
+
+    )
+
+    .value;
+
+
+/* EMPTY */
+
+
+    if(
+
+    userId
+
+    ==
+
+    ""
+
+    ||
+
+    password
+
+    ==
+
+    ""
+
+    ) {
+
+
+        alert(
+
+        "Please enter your User ID and password."
+
+        );
+
+
+        return;
+
+
+    }
+
+
+/* NOT FOUND */
+
+
+    if(
+
+    !partEAccounts[
+
+    userId
+
+    ]
+
+    ) {
+
+
+        alert(
+
+        "❌ User ID not found.\n\nCheck your User ID or create an account."
+
+        );
+
+
+        return;
+
+
+    }
+
+
+/* WRONG PASSWORD */
+
+
+    if(
+
+    partEAccounts[
+
+    userId
+
+    ]
+
+    .password
+
+    !=
+
+    password
+
+    ) {
+
+
+        alert(
+
+        "❌ Incorrect password."
+
+        );
+
+
+        return;
+
+
+    }
+
+
+/* LOGIN */
+
+
+    partECurrentUser =
+
+    userId;
+
+
+    localStorage
+
+    .setItem(
+
+    "sumanPlayHubLoggedAccount",
+
+    userId
+
+    );
+
+
+/* CLEAR */
+
+
+    document
+
+    .getElementById(
+
+    "newLoginUserId"
+
+    )
+
+    .value =
+
+    "";
+
+
+    document
+
+    .getElementById(
+
+    "newLoginPassword"
+
+    )
+
+    .value =
+
+    "";
+
+
+/* LOAD */
+
+
+    loadPartEUserData();
+
+
+    updatePartEAccountScreen();
+
+
+    displayUserGames();
+
+
+    showMessage(
+
+    "🎮 Welcome back, "
+
+    +
+
+    partEAccounts[
+
+    userId
+
+    ]
+
+    .displayName
+
+    +
+
+    "!"
+
+    );
+
+
+}
+
+
+/* =========================
+LOAD SEPARATE CART
+AND WISHLIST
+========================= */
+
+
+function loadPartEUserData() {
+
+
+    if(
+
+    partECurrentUser
+
+    ) {
+
+
+        cart =
+
+        JSON.parse(
+
+        localStorage.getItem(
+
+        "sumanPlayHubAccountCart_"
+
+        +
+
+        partECurrentUser
+
+        )
+
+        )
+
+        ||
+
+        [];
+
+
+        wishlist =
+
+        JSON.parse(
+
+        localStorage.getItem(
+
+        "sumanPlayHubAccountWishlist_"
+
+        +
+
+        partECurrentUser
+
+        )
+
+        )
+
+        ||
+
+        [];
+
+
+    }
+
+
+    else {
+
+
+        cart =
+
+        [];
+
+
+        wishlist =
+
+        [];
+
+
+    }
+
+
+    updateCounts();
+
+
+}
+
+
+/* =========================
+SAVE WEBSITE DATA
+========================= */
+
+
+saveData =
+
+function() {
+
+
+/* SAVE ALL PUBLIC LISTINGS */
+
+
+    localStorage
+
+    .setItem(
+
+    "sumanPlayHubUserGames",
+
+    JSON.stringify(
+
+    userGames
+
+    )
+
+    );
+
+
+/* SAVE CURRENT USER DATA */
+
+
+    if(
+
+    partECurrentUser
+
+    ) {
+
+
+        localStorage
+
+        .setItem(
+
+        "sumanPlayHubAccountCart_"
+
+        +
+
+        partECurrentUser,
+
+        JSON.stringify(
+
+        cart
+
+        )
+
+        );
+
+
+        localStorage
+
+        .setItem(
+
+        "sumanPlayHubAccountWishlist_"
+
+        +
+
+        partECurrentUser,
+
+        JSON.stringify(
+
+        wishlist
+
+        )
+
+        );
+
+
+    }
+
+
+};
+
+
+/* =========================
+UPDATE ACCOUNT PROFILE
+========================= */
+
+
+function updatePartEAccountScreen() {
+
+
+    let guestArea =
+
+    document
+
+    .getElementById(
+
+    "accountGuestArea"
+
+    );
+
+
+    let loggedArea =
+
+    document
+
+    .getElementById(
+
+    "accountLoggedArea"
+
+    );
+
+
+/* LOGGED OUT */
+
+
+    if(
+
+    !partECurrentUser
+
+    ||
+
+    !partEAccounts[
+
+    partECurrentUser
+
+    ]
+
+    ) {
+
+
+        partECurrentUser =
+
+        null;
+
+
+        guestArea
+
+        .style
+
+        .display =
+
+        "block";
+
+
+        loggedArea
+
+        .style
+
+        .display =
+
+        "none";
+
+
+        if(
+
+        partELoginButton
+
+        ) {
+
+
+            partELoginButton
+
+            .innerHTML =
+
+            "👤 Login";
+
+
+        }
+
+
+        return;
+
+
+    }
+
+
+/* LOGGED IN */
+
+
+    let account =
+
+    partEAccounts[
+
+    partECurrentUser
+
+    ];
+
+
+    guestArea
+
+    .style
+
+    .display =
+
+    "none";
+
+
+    loggedArea
+
+    .style
+
+    .display =
+
+    "block";
+
+
+    partELoginButton
+
+    .innerHTML =
+
+    "👤 "
+
+    +
+
+    account.userId;
+
+
+    document
+
+    .getElementById(
+
+    "newProfileName"
+
+    )
+
+    .innerText =
+
+    account.displayName;
+
+
+    document
+
+    .getElementById(
+
+    "newProfileId"
+
+    )
+
+    .innerText =
+
+    "@"
+
+    +
+
+    account.userId;
+
+
+/* COUNT OWN LISTINGS */
+
+
+    let myGames =
+
+    userGames
+
+    .filter(
+
+    function(
+
+    game
+
+    ) {
+
+
+        return game.ownerAccount
+
+        ==
+
+        partECurrentUser;
+
+
+    }
+
+    );
+
+
+    document
+
+    .getElementById(
+
+    "newProfileListings"
+
+    )
+
+    .innerText =
+
+    myGames.length;
+
+
+    document
+
+    .getElementById(
+
+    "newProfileCart"
+
+    )
+
+    .innerText =
+
+    cart.length;
+
+
+    document
+
+    .getElementById(
+
+    "newProfileWishlist"
+
+    )
+
+    .innerText =
+
+    wishlist.length;
+
+
+}
+
+
+/* =========================
+LOGOUT
+========================= */
+
+
+function newLogoutAccount() {
+
+
+    let confirmation =
+
+    confirm(
+
+    "Do you want to log out?"
+
+    );
+
+
+    if(
+
+    !confirmation
+
+    ) {
+
+
+        return;
+
+
+    }
+
+
+    partECurrentUser =
+
+    null;
+
+
+    localStorage
+
+    .removeItem(
+
+    "sumanPlayHubLoggedAccount"
+
+    );
+
+
+    cart =
+
+    [];
+
+
+    wishlist =
+
+    [];
+
+
+    updateCounts();
+
+
+    updatePartEAccountScreen();
+
+
+    displayUserGames();
+
+
+    closePopup(
+
+    "newAccountPopup"
+
+    );
+
+
+    showMessage(
+
+    "🚪 Logged out successfully"
+
+    );
+
+
+}
+
+
+/* =========================
+LOGIN REQUIRED
+========================= */
+
+
+function partERequireLogin() {
+
+
+    if(
+
+    !partECurrentUser
+
+    ) {
+
+
+        alert(
+
+        "🔐 Please login or create an account first."
+
+        );
+
+
+        openNewAccount();
+
+
+        return false;
+
+
+    }
+
+
+    return true;
+
+
+}
+
+
+/* =========================
+SELL REQUIRES LOGIN
+========================= */
+
+
+let partEOldOpenSell =
+
+openSellPopup;
+
+
+openSellPopup =
+
+function() {
+
+
+    if(
+
+    !partERequireLogin()
+
+    ) {
+
+
+        return;
+
+
+    }
+
+
+    partEOldOpenSell();
+
+
+};
+
+
+/* =========================
+CONNECT NEW LISTING
+TO CURRENT ACCOUNT
+========================= */
+
+
+let partEOldListGame =
+
+listGame;
+
+
+listGame =
+
+function() {
+
+
+    if(
+
+    !partERequireLogin()
+
+    ) {
+
+
+        return;
+
+
+    }
+
+
+    let gamesBefore =
+
+    userGames.length;
+
+
+    partEOldListGame();
+
+
+/* IF NEW GAME WAS ADDED */
+
+
+    if(
+
+    userGames.length
+
+    >
+
+    gamesBefore
+
+    ) {
+
+
+        userGames[
+
+        0
+
+        ]
+
+        .ownerAccount =
+
+        partECurrentUser;
+
+
+        saveData();
+
+
+        displayUserGames();
+
+
+        updatePartEAccountScreen();
+
+
+    }
+
+
+};
+
+
+/* =========================
+OWNER CONTROLS
+========================= */
+
+
+let partEOldDisplayGames =
+
+displayUserGames;
+
+
+displayUserGames =
+
+function() {
+
+
+    partEOldDisplayGames();
+
+
+    setTimeout(
+
+    function() {
+
+
+        let cards =
+
+        document
+
+        .querySelectorAll(
+
+        "#userGameGrid .game-card"
+
+        );
+
+
+        cards
+
+        .forEach(
+
+        function(
+
+        card,
+
+        index
+
+        ) {
+
+
+            let game =
+
+            userGames[
+
+            index
+
+            ];
+
+
+            if(
+
+            !game
+
+            ) {
+
+
+                return;
+
+
+            }
+
+
+            let isOwner =
+
+            game.ownerAccount
+
+            &&
+
+            game.ownerAccount
+
+            ==
+
+            partECurrentUser;
+
+
+            let ownerButtons =
+
+            card
+
+            .querySelector(
+
+            ".owner-buttons"
+
+            );
+
+
+            let soldButton =
+
+            card
+
+            .querySelector(
+
+            ".sold-game-button"
+
+            );
+
+
+/* ACCOUNT LISTING */
+
+
+            if(
+
+            game.ownerAccount
+
+            ) {
+
+
+/* HIDE OWNER BUTTONS
+FROM OTHER USERS */
+
+
+                if(
+
+                !isOwner
+
+                ) {
+
+
+                    if(
+
+                    ownerButtons
+
+                    ) {
+
+
+                        ownerButtons
+
+                        .style
+
+                        .display =
+
+                        "none";
+
+
+                    }
+
+
+                    if(
+
+                    soldButton
+
+                    ) {
+
+
+                        soldButton
+
+                        .style
+
+                        .display =
+
+                        "none";
+
+
+                    }
+
+
+                }
+
+
+/* OWNER BADGE */
+
+
+                if(
+
+                isOwner
+
+                ) {
+
+
+                    if(
+
+                    !card
+
+                    .querySelector(
+
+                    ".part-e-owner-badge"
+
+                    )
+
+                    ) {
+
+
+                        let badge =
+
+                        document
+
+                        .createElement(
+
+                        "div"
+
+                        );
+
+
+                        badge
+
+                        .className =
+
+                        "part-e-owner-badge";
+
+
+                        badge
+
+                        .innerHTML =
+
+                        "👤 Your Listing";
+
+
+                        let information =
+
+                        card
+
+                        .querySelector(
+
+                        ".game-information"
+
+                        );
+
+
+                        information
+
+                        .insertBefore(
+
+                        badge,
+
+                        information
+
+                        .querySelector(
+
+                        ".card-buttons"
+
+                        )
+
+                        );
+
+
+                    }
+
+
+                }
+
+
+            }
+
+
+        }
+
+        );
+
+
+    },
+
+    80
+
+    );
+
+
+};
+
+
+/* =========================
+ACCOUNT OWNER EDIT
+========================= */
+
+
+let partEOldEdit =
+
+editListing;
+
+
+editListing =
+
+function(
+
+index
+
+) {
+
+
+    let game =
+
+    userGames[
+
+    index
+
+    ];
+
+
+    if(
+
+    game.ownerAccount
+
+    ) {
+
+
+        if(
+
+        game.ownerAccount
+
+        !=
+
+        partECurrentUser
+
+        ) {
+
+
+            alert(
+
+            "❌ Only the account owner can edit this game."
+
+            );
+
+
+            return;
+
+
+        }
+
+
+        let newPrice =
+
+        prompt(
+
+        "Enter the new selling price:",
+
+        game.price
+
+        );
+
+
+        if(
+
+        newPrice
+
+        ==
+
+        null
+
+        ) {
+
+
+            return;
+
+
+        }
+
+
+        newPrice =
+
+        Number(
+
+        newPrice
+
+        );
+
+
+        if(
+
+        newPrice
+
+        <=
+
+        0
+
+        ) {
+
+
+            alert(
+
+            "Please enter a valid price."
+
+            );
+
+
+            return;
+
+
+        }
+
+
+        game.price =
+
+        newPrice;
+
+
+        saveData();
+
+
+        displayUserGames();
+
+
+        showMessage(
+
+        "✏️ Your listing was updated"
+
+        );
+
+
+        return;
+
+
+    }
+
+
+/* OLD LISTINGS STILL USE PIN */
+
+
+    partEOldEdit(
+
+    index
+
+    );
+
+
+};
+
+
+/* =========================
+ACCOUNT OWNER DELETE
+========================= */
+
+
+let partEOldDelete =
+
+deleteListing;
+
+
+deleteListing =
+
+function(
+
+index
+
+) {
+
+
+    let game =
+
+    userGames[
+
+    index
+
+    ];
+
+
+    if(
+
+    game.ownerAccount
+
+    ) {
+
+
+        if(
+
+        game.ownerAccount
+
+        !=
+
+        partECurrentUser
+
+        ) {
+
+
+            alert(
+
+            "❌ Only the account owner can remove this game."
+
+            );
+
+
+            return;
+
+
+        }
+
+
+        let confirmation =
+
+        confirm(
+
+        "Remove "
+
+        +
+
+        game.name
+
+        +
+
+        "?"
+
+        );
+
+
+        if(
+
+        confirmation
+
+        ) {
+
+
+            userGames
+
+            .splice(
+
+            index,
+
+            1
+
+            );
+
+
+            saveData();
+
+
+            displayUserGames();
+
+
+            updatePartEAccountScreen();
+
+
+            showMessage(
+
+            "🗑️ Your listing was removed"
+
+            );
+
+
+        }
+
+
+        return;
+
+
+    }
+
+
+/* OLD LISTING USES PIN */
+
+
+    partEOldDelete(
+
+    index
+
+    );
+
+
+};
+
+
+/* =========================
+ACCOUNT OWNER MARK SOLD
+========================= */
+
+
+let partEOldMarkSold =
+
+markGameAsSold;
+
+
+markGameAsSold =
+
+function(
+
+index
+
+) {
+
+
+    let game =
+
+    userGames[
+
+    index
+
+    ];
+
+
+    if(
+
+    game.ownerAccount
+
+    ) {
+
+
+        if(
+
+        game.ownerAccount
+
+        !=
+
+        partECurrentUser
+
+        ) {
+
+
+            alert(
+
+            "❌ Only the account owner can change this game."
+
+            );
+
+
+            return;
+
+
+        }
+
+
+        if(
+
+        game.status
+
+        ==
+
+        "Sold"
+
+        ) {
+
+
+            showMessage(
+
+            "🔴 This game is already sold"
+
+            );
+
+
+            return;
+
+
+        }
+
+
+        let confirmation =
+
+        confirm(
+
+        "Mark "
+
+        +
+
+        game.name
+
+        +
+
+        " as SOLD?"
+
+        );
+
+
+        if(
+
+        confirmation
+
+        ) {
+
+
+            game.status =
+
+            "Sold";
+
+
+            saveData();
+
+
+            displayUserGames();
+
+
+            showMessage(
+
+            "🔴 Your game was marked as sold"
+
+            );
+
+
+        }
+
+
+        return;
+
+
+    }
+
+
+/* OLD LISTING USES PIN */
+
+
+    partEOldMarkSold(
+
+    index
+
+    );
+
+
+};
+
+
+/* =========================
+CART REQUIRES LOGIN
+========================= */
+
+
+let partEOldAddCart =
+
+addToCart;
+
+
+addToCart =
+
+function(
+
+game
+
+) {
+
+
+    if(
+
+    !partERequireLogin()
+
+    ) {
+
+
+        return;
+
+
+    }
+
+
+    partEOldAddCart(
+
+    game
+
+    );
+
+
+    updatePartEAccountScreen();
+
+
+};
+
+
+/* =========================
+WISHLIST REQUIRES LOGIN
+========================= */
+
+
+let partEOldWishlist =
+
+toggleWishlist;
+
+
+toggleWishlist =
+
+function(
+
+game,
+
+button
+
+) {
+
+
+    if(
+
+    !partERequireLogin()
+
+    ) {
+
+
+        return;
+
+
+    }
+
+
+    partEOldWishlist(
+
+    game,
+
+    button
+
+    );
+
+
+    updatePartEAccountScreen();
+
+
+};
+
+
+/* =========================
+GO TO MY LISTINGS
+========================= */
+
+
+function newGoToMyListings() {
+
+
+    closePopup(
+
+    "newAccountPopup"
+
+    );
+
+
+    document
+
+    .getElementById(
+
+    "userListings"
+
+    )
+
+    .scrollIntoView(
+
+    {
+
+        behavior:
+
+        "smooth"
+
+    }
+
+    );
+
+
+}
+
+
+/* =========================
+START PART E
+========================= */
+
+
+/* REMOVE OLD DEMO LOGIN */
+
+
+localStorage
+
+.removeItem(
+
+"sumanPlayHubUser"
+
+);
+
+
+/* LOAD CURRENT ACCOUNT */
+
+
+loadPartEUserData();
+
+
+updatePartEAccountScreen();
+
+
+displayUserGames();
+
+
+</script>
+
+
+<!-- =========================
+END PART E
+========================= -->
+
+
+</body>
+
+</html>
